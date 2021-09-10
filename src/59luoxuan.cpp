@@ -5,7 +5,7 @@ class Solution {
 public:
     vector<vector<int>> generateMatrix(int n)
     {
-        vector<vector<int>> arret;
+        vector<vector<int>> arr(n, vector<int>(n, 0));
         int i = 0;
         int j = 0;
         int h0 = 0;
@@ -16,8 +16,6 @@ public:
         bool down = false;
         bool left = false;
         bool up = false;
-        //题目限定了n小于等于20
-        int arr[20][20] = {0};
         for (int index = 1; index <= n * n; index++)
         {
             arr[i][j] = index;
@@ -87,17 +85,45 @@ public:
                 }
             }
         }
-        for (int i = 0; i < n; i++)
+        return arr;
+    }
+    vector<vector<int>> generateMatrix1(int n)
+    {
+        vector<vector<int>> arr(n, vector<int>(n, 0));
+        int loop = n / 2;
+        int count = 1;
+        int startx = 0, starty = 0;
+        int offset = 0;
+        while (loop--)
         {
-            vector<int> tmp;
-            for (int j = 0; j < n; j++)
+            int i = startx;
+            int j = starty;
+            for (; j < starty + n - offset - 1; j++)
             {
-                
-                tmp.push_back(arr[i][j]);
+                arr[i][j] = count++;
             }
-            arret.push_back(tmp);
+            for (; i < startx + n - offset - 1; i++)
+            {
+                arr[i][j] = count++;
+            }
+            for (; j > offset - starty; j--)
+            {
+                arr[i][j] = count++;
+            }
+            for (; i > offset - startx; i--)
+            {
+                arr[i][j] = count++;
+            }
+            startx++;
+            starty++;
+            offset += 2;
         }
-        return arret;
+        if (n % 2)
+        {
+            int pos = n / 2;
+            arr[pos][pos] = count;
+        }
+        return arr;
     }
 };
 int main()
