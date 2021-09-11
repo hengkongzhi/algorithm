@@ -10,7 +10,10 @@ shortarraysrc=../src/209shortarray.cpp
 luoxuanbin=../bin/59luoxuan
 luoxuansrc=../src/59luoxuan.cpp
 
-target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin)
+erasenodebin=../bin/203erasenode
+erasenodesrc=../src/203erasenode.cpp
+
+target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin)
 $(find2halfbin) : $(find2halfsrc)
 	g++ -std=c++11 -o $(find2halfbin) $(find2halfsrc)
 
@@ -22,3 +25,6 @@ $(shortarraybin) : $(shortarraysrc)
 
 $(luoxuanbin) : $(luoxuansrc)
 	g++ -std=c++11 -g -o $(luoxuanbin) $(luoxuansrc)
+
+$(erasenodebin) : $(erasenodesrc)
+	g++ -std=c++11 -g -o $(erasenodebin) $(erasenodesrc)
