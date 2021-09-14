@@ -16,7 +16,10 @@ erasenodesrc=../src/203erasenode.cpp
 devlistbin=../bin/707devlist
 devlistrc=../src/707devlist.cpp
 
-target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin) $(devlistbin)
+reverlistbin=../bin/206reverlist
+reverlistsrc=../src/206reverlist.cpp
+
+target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin) $(devlistbin) $(reverlistbin)
 $(find2halfbin) : $(find2halfsrc)
 	g++ -std=c++11 -o $(find2halfbin) $(find2halfsrc)
 
@@ -34,3 +37,6 @@ $(erasenodebin) : $(erasenodesrc)
 
 $(devlistbin) : $(devlistrc)
 	g++ -std=c++11 -g -o $(devlistbin) $(devlistrc)
+
+$(reverlistbin) : $(reverlistsrc)
+	g++ -std=c++11 -g -o $(reverlistbin) $(reverlistsrc)
