@@ -19,7 +19,11 @@ devlistrc=../src/707devlist.cpp
 reverlistbin=../bin/206reverlist
 reverlistsrc=../src/206reverlist.cpp
 
-target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin) $(devlistbin) $(reverlistbin)
+eraserevernbin=../bin/19eraserevern
+eraserevernsrc=../src/19eraserevern.cpp
+
+target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin) $(devlistbin) $(reverlistbin) \
+$(eraserevernbin)
 $(find2halfbin) : $(find2halfsrc)
 	g++ -std=c++11 -o $(find2halfbin) $(find2halfsrc)
 
@@ -40,3 +44,6 @@ $(devlistbin) : $(devlistrc)
 
 $(reverlistbin) : $(reverlistsrc)
 	g++ -std=c++11 -g -o $(reverlistbin) $(reverlistsrc)
+
+$(eraserevernbin) : $(eraserevernsrc)
+	g++ -std=c++11 -g -o $(eraserevernbin) $(eraserevernsrc)
