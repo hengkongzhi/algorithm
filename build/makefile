@@ -22,8 +22,11 @@ reverlistsrc=../src/206reverlist.cpp
 eraserevernbin=../bin/19eraserevern
 eraserevernsrc=../src/19eraserevern.cpp
 
+circlelistbin=../bin/142circlelist
+circlelistsrc=../src/142circlelist.cpp
+
 target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin) $(devlistbin) $(reverlistbin) \
-$(eraserevernbin)
+$(eraserevernbin) $(circlelistbin)
 $(find2halfbin) : $(find2halfsrc)
 	g++ -std=c++11 -o $(find2halfbin) $(find2halfsrc)
 
@@ -47,3 +50,6 @@ $(reverlistbin) : $(reverlistsrc)
 
 $(eraserevernbin) : $(eraserevernsrc)
 	g++ -std=c++11 -g -o $(eraserevernbin) $(eraserevernsrc)
+
+$(circlelistbin) : $(circlelistsrc)
+	g++ -std=c++11 -g -o $(circlelistbin) $(circlelistsrc)
