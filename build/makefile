@@ -1,55 +1,10 @@
-find2halfbin=../bin/704find2half
-find2halfsrc=../src/704find2half.cpp
-
-erasebin=../bin/27erase
-erasesrc=../src/27erase.cpp
-
-shortarraybin=../bin/209shortarray
-shortarraysrc=../src/209shortarray.cpp
-
-luoxuanbin=../bin/59luoxuan
-luoxuansrc=../src/59luoxuan.cpp
-
-erasenodebin=../bin/203erasenode
-erasenodesrc=../src/203erasenode.cpp
-
-devlistbin=../bin/707devlist
-devlistrc=../src/707devlist.cpp
-
-reverlistbin=../bin/206reverlist
-reverlistsrc=../src/206reverlist.cpp
-
-eraserevernbin=../bin/19eraserevern
-eraserevernsrc=../src/19eraserevern.cpp
-
-circlelistbin=../bin/142circlelist
-circlelistsrc=../src/142circlelist.cpp
-
-target : $(find2halfbin) $(erasebin) $(shortarraybin) $(luoxuanbin) $(erasenodebin) $(devlistbin) $(reverlistbin) \
-$(eraserevernbin) $(circlelistbin)
-$(find2halfbin) : $(find2halfsrc)
-	g++ -std=c++11 -o $(find2halfbin) $(find2halfsrc)
-
-$(erasebin) : $(erasesrc)
-	g++ -std=c++11 -o $(erasebin) $(erasesrc)
-
-$(shortarraybin) : $(shortarraysrc)
-	g++ -std=c++11 -o $(shortarraybin) $(shortarraysrc)
-
-$(luoxuanbin) : $(luoxuansrc)
-	g++ -std=c++11 -g -o $(luoxuanbin) $(luoxuansrc)
-
-$(erasenodebin) : $(erasenodesrc)
-	g++ -std=c++11 -g -o $(erasenodebin) $(erasenodesrc)
-
-$(devlistbin) : $(devlistrc)
-	g++ -std=c++11 -g -o $(devlistbin) $(devlistrc)
-
-$(reverlistbin) : $(reverlistsrc)
-	g++ -std=c++11 -g -o $(reverlistbin) $(reverlistsrc)
-
-$(eraserevernbin) : $(eraserevernsrc)
-	g++ -std=c++11 -g -o $(eraserevernbin) $(eraserevernsrc)
-
-$(circlelistbin) : $(circlelistsrc)
-	g++ -std=c++11 -g -o $(circlelistbin) $(circlelistsrc)
+src=704find2half.cpp 27erase.cpp 209shortarray.cpp 59luoxuan.cpp 203erasenode.cpp 707devlist.cpp 206reverlist.cpp \
+19eraserevern.cpp 142circlelist.cpp 242strsame.cpp
+rebin=$(addprefix ../bin/,$(basename $(src)))
+define func
+$(1):$(2)
+	@g++ -std=c++11 -g $(2) -o $(1)
+	@echo [COMPILE]$(notdir $(1)) SUCCESS
+endef
+target0 : $(rebin)
+$(foreach var,$(src),$(eval $(call func,$(addprefix ../bin/,$(basename $(var))),$(addprefix ../src/,$(var)))))
