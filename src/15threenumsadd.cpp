@@ -105,6 +105,101 @@ public:
         }
         return myVec;
     }
+    vector<vector<int>> threeSum1(vector<int>& nums)
+    {
+        vector<vector<int>> myVec;
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < nums.size(); i++)
+        {
+            if (nums[i] > 0)
+            {
+                break;
+            }
+            if (i > 0 && nums[i] == nums[i - 1])
+            {
+                continue;
+            }
+            unordered_set<int> mySet;
+            for (int j = i + 1; j < nums.size(); j++)
+            {
+                if (j > i + 2 && nums[j - 2] == nums[j - 1] && nums[j] == nums[j - 1])
+                {
+                    continue;
+                }
+                int c = (nums[i] + nums[j]) * -1;
+                if (mySet.find(c) != mySet.end())
+                {
+                   myVec.push_back(vector<int>{nums[i], nums[j], c});
+                   mySet.erase(c);
+                }
+                else
+                {
+                    mySet.insert(nums[j]);
+                }
+            }
+        }
+        return myVec;
+    }
+    vector<vector<int>> threeSum2(vector<int>& nums)
+    {
+        vector<vector<int>> myVec;
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < nums.size(); i++)
+        {
+            if (nums[i] > 0)
+            {
+                break;
+            }
+            if (i > 0 && nums[i] == nums[i - 1])
+            {
+                continue;
+            }
+            int left = i + 1;
+            int right = nums.size() - 1;
+            while (left < right)
+            {
+                if (nums[i] + nums[left] + nums[right] == 0)
+                {
+                    myVec.push_back(vector<int>{nums[i], nums[left], nums[right]});
+                    int rightTmp = right;
+                    int leftTmp = left;
+                    while (left < rightTmp && nums[rightTmp] == nums[right])
+                    {
+                        rightTmp--;
+                    }
+                    if (left < rightTmp)
+                    {
+                        right = rightTmp;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                    while (leftTmp < right && nums[leftTmp] == nums[left])
+                    {
+                        leftTmp++;
+                    }
+                    if (leftTmp < right)
+                    {
+                        left = leftTmp;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else if (nums[i] + nums[left] + nums[right] > 0)
+                {
+                    right--;
+                }
+                else
+                {
+                    left++;
+                }
+            }
+        }
+        return myVec;
+    }
     void printVecArr(const vector<vector<int>>& myVec)
     {
         for (auto& vec : myVec)
@@ -121,6 +216,6 @@ int main()
 {
     vector<int> nums{-1,0,1,2,-1,-4};
     Solution solve;
-    solve.printVecArr(solve.threeSum(nums));
+    solve.printVecArr(solve.threeSum2(nums));
     return 0;
 }
