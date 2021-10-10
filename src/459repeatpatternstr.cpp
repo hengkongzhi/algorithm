@@ -24,6 +24,7 @@ public:
     }
     bool repeatedSubstringPattern(string s)
     {
+        //未通过所有用例
         const int sz = s.size();
         int next[sz] = {0};
         getNext(next, s);
@@ -53,11 +54,26 @@ public:
         }
         return true;
     }
+    bool repeatedSubstringPattern1(string s)
+    {
+        const int sz = s.size();
+        int next[sz] = {0};
+        getNext(next, s);
+        if (next[sz - 1] == 0)
+        {
+            return false;
+        }
+        if (sz % (sz - next[sz - 1]) == 0)
+        {
+            return true;
+        }
+        return false;
+    }
 };
 int main()
 {
-    string s1 = "a";
+    string s1 = "ababab";
     Solution solve;
-    cout << (solve.repeatedSubstringPattern(s1) ? "TRUE" : "FALSE") << endl;
+    cout << (solve.repeatedSubstringPattern1(s1) ? "TRUE" : "FALSE") << endl;
     return 0;
 }
