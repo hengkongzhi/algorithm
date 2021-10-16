@@ -92,6 +92,48 @@ public:
         }
         return myV;
     }
+    void queueAdj(queue<int>& myQ)
+    {
+        while (myQ.front() < myQ.back())
+        {
+            myQ.pop();
+        }
+    }
+    vector<int> maxSlidingWindow2(vector<int>& nums, int k)
+    {
+        vector<int> myVec;
+        queue<int> myQ;
+        int index = 0;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            if (index < k)
+            {
+                myQ.push(nums[i]);
+                queueAdj(myQ);
+                if (index == k - 1)
+                {
+                    myVec.push_back(myQ.front());
+                }
+                index++;
+                continue;
+            }
+            if (index == k)
+            {
+                if (nums[i - k] == myQ.front())
+                {
+                    myQ.pop();
+                    if (!myQ.empty())
+                    {
+                        queueAdj(myQ);
+                    }
+                }
+                myQ.push(nums[i]);
+                queueAdj(myQ);
+                myVec.push_back(myQ.front());
+            }
+        }
+        return myVec;
+    }
     void printVec(const vector<int>& myV)
     {
         for (auto num : myV)
@@ -105,6 +147,6 @@ int main()
 {
     Solution sol;
     vector<int> nums{1,3,-1,-3,5,3,6,7};
-    sol.printVec(sol.maxSlidingWindow1(nums, 3));
+    sol.printVec(sol.maxSlidingWindow2(nums, 3));
     return 0;
 }
