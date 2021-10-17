@@ -3,6 +3,7 @@
 #include <string>
 #include <stack>
 #include <queue>
+#include <deque>
 #include <algorithm>
 #include <stdlib.h>
 using namespace std;
@@ -92,24 +93,24 @@ public:
         }
         return myV;
     }
-    void queueAdj(queue<int>& myQ)
+    void queuePush(deque<int>& myQ, int val)
     {
-        while (myQ.front() < myQ.back())
+        while (!myQ.empty() && myQ.back() < val)
         {
-            myQ.pop();
+            myQ.pop_back();
         }
+        myQ.push_back(val);
     }
     vector<int> maxSlidingWindow2(vector<int>& nums, int k)
     {
         vector<int> myVec;
-        queue<int> myQ;
+        deque<int> myQ;
         int index = 0;
         for (int i = 0; i < nums.size(); i++)
         {
             if (index < k)
             {
-                myQ.push(nums[i]);
-                queueAdj(myQ);
+                queuePush(myQ, nums[i]);
                 if (index == k - 1)
                 {
                     myVec.push_back(myQ.front());
@@ -121,14 +122,9 @@ public:
             {
                 if (nums[i - k] == myQ.front())
                 {
-                    myQ.pop();
-                    if (!myQ.empty())
-                    {
-                        queueAdj(myQ);
-                    }
+                    myQ.pop_front();
                 }
-                myQ.push(nums[i]);
-                queueAdj(myQ);
+                queuePush(myQ, nums[i]);
                 myVec.push_back(myQ.front());
             }
         }
