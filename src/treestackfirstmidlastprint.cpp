@@ -53,19 +53,23 @@ public:
     vector<int> treeMidPrint(Tree* root)
     {
         vector<int> myV;
+        if (root == nullptr)
+        {
+            return myV;
+        }
         stack<Tree*> myS;
         myS.push(root);
         Tree* cur;
         while (!myS.empty())
         {
             cur = myS.top();
-            while (cur->left && cur->left->val != -1)
+            while (cur->left && cur->left->val != -101)
             {
                 myS.push(cur->left);
                 cur = cur->left;
             }
             myV.push_back(cur->val);
-            cur->left->val = -1;
+            cur->val = -101;
             myS.pop();
             if (cur->right)
             {
@@ -75,9 +79,89 @@ public:
 
         return myV;
     }
+    vector<int> treeMidPrint1(Tree* root)
+    {
+        vector<int> myV;
+        stack<Tree*> myS;
+        Tree* cur = root;
+        while (cur || !myS.empty())
+        {
+            if (cur)
+            {
+                myS.push(cur);
+                cur = cur->left;
+            }
+            else
+            {
+                cur = myS.top();
+                myS.pop();
+                myV.push_back(cur->val);
+                cur = cur->right;
+            }
+        }
+        return myV;
+    }
     vector<int> treeLastPrint(Tree* root)
     {
+        vector<int> myV;
+        if (root == nullptr)
+        {
+            return myV;
+        }
+        stack<Tree*> myS;
+        myS.push(root);
+        Tree* cur;
+        while (!myS.empty())
+        {
+            cur = myS.top();
+            while (cur->left && cur->left->val != -101)
+            {
+                myS.push(cur->left);
+                cur = cur->left;
+            }
 
+            if (cur->right && cur->right->val != -101)
+            {
+                myS.push(cur->right);
+            }
+            else
+            {
+                myV.push_back(cur->val);
+                cur->val = -101;
+                myS.pop();
+            }
+
+        }
+
+        return myV;        
+    }
+    vector<int> treeLastPrint1(Tree* root)
+    {
+        vector<int> myV;
+        if (root == nullptr)
+        {
+            return myV;
+        }
+        stack<Tree*> myS;
+        myS.push(root);
+        Tree* cur;
+        while (!myS.empty())
+        {
+            cur = myS.top();
+            myV.push_back(cur->val);
+            myS.pop();
+            if (cur->left)
+            {
+                myS.push(cur->left);
+            }
+            if (cur->right)
+            {
+                myS.push(cur->right);
+            }
+
+        }
+        reverse(myV.begin(), myV.end());
+        return myV;
     }
     void printVec(const vector<int>& myV)
     {
@@ -106,7 +190,7 @@ int main()
     f2->right = f6;
 
     sol.printVec(sol.treeFirstPrint(root));
-    sol.printVec(sol.treeMidPrint(root));
-    // sol.printVec(sol.treeLastPrint(root));
+    sol.printVec(sol.treeMidPrint1(root));
+    sol.printVec(sol.treeLastPrint1(root));
     return 0;
 }
