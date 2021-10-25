@@ -117,6 +117,39 @@ public:
         }
         return myVecArr;
     }
+    vector<vector<int>> levelOrder2(TreeNode* root)
+    {
+        vector<vector<int>> myVecArr;
+        queue<TreeNode*> myQ;
+        if (root == nullptr)
+        {
+            return myVecArr;
+        }
+        myQ.push(root);
+        vector<int> tmp;
+        TreeNode* cur;
+        while (!myQ.empty())
+        {
+            int size = myQ.size();
+            for (int i = 0; i < size; i++)
+            {
+                cur = myQ.front();
+                myQ.pop();
+                tmp.push_back(cur->val);
+                if (cur->left)
+                {
+                    myQ.push(cur->left);
+                }
+                if (cur->right)
+                {
+                    myQ.push(cur->right);
+                }
+            }
+            myVecArr.push_back(tmp);
+            tmp.clear();
+        }
+        return myVecArr;
+    }
     void printVecArr(const vector<vector<int>>& myVecArr)
     {
         for (auto myV : myVecArr)
@@ -145,6 +178,6 @@ int main()
     f1->right = f4;
     f2->left = f5;
     f2->right = f6;
-    sol.printVecArr(sol.levelOrder1(root));
+    sol.printVecArr(sol.levelOrder2(root));
     return 0;
 }
