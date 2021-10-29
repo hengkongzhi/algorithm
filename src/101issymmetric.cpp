@@ -113,6 +113,49 @@ public:
         }
         return compare(root->left, root->right);
     }
+    bool isSymmetric2(TreeNode* root)
+    {
+        stack<TreeNode*> myStack1;
+        stack<TreeNode*> myStack2;
+        if (root == nullptr)
+        {
+            return true;
+        }
+        myStack1.push(root->left);
+        myStack2.push(root->right);
+        TreeNode *cur1, *cur2;
+
+        while (!myStack2.empty() && !myStack1.empty())
+        {
+            cur1 = myStack1.top();
+            cur2 = myStack2.top();
+            if (cur1 == nullptr && cur2 != nullptr)
+            {
+                return false;
+            }
+            else if (cur2 == nullptr && cur1 != nullptr)
+            {
+                return false;
+            }
+            else if (cur2 == nullptr && cur1 == nullptr)
+            {
+                myStack2.pop();
+                myStack1.pop();
+                continue;
+            }
+            else if (cur1->val != cur2->val)
+            {
+                return false;
+            }
+            myStack2.pop();
+            myStack1.pop();
+            myStack1.push(cur1->left);
+            myStack1.push(cur1->right);
+            myStack2.push(cur2->right);
+            myStack2.push(cur2->left);
+        }
+        return myStack1.empty() && myStack2.empty();
+    }
 
     void printVecArr(const vector<vector<int>>& myVecArr)
     {
@@ -138,6 +181,6 @@ int main()
     root->right = f2;
     f1->right = f4;
     f2->right = f6;
-    cout << (sol.isSymmetric1(root) ? "TRUE" : "FALSE") << endl;
+    cout << (sol.isSymmetric2(root) ? "TRUE" : "FALSE") << endl;
     return 0;
 }
