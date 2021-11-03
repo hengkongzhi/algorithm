@@ -89,6 +89,71 @@ public:
         return myV;
 
     }
+    void getDiguiPath(TreeNode* root, vector<int>& myVal, vector<string>& ret)
+    {
+        myVal.push_back(root->val);
+        if (root->left == nullptr && root->right == nullptr)
+        {
+            retVec(myVal, ret);
+            return;
+        }
+        if (root->left)
+        {
+            getDiguiPath(root->left, myVal, ret);
+            myVal.pop_back();
+        }
+        if (root->right)
+        {
+            getDiguiPath(root->right, myVal, ret);
+            myVal.pop_back();
+        }
+    }
+    vector<string> binaryTreePaths1(TreeNode* root)
+    {
+        vector<int> myPath;
+        vector<string> myStr;
+        if (root == nullptr)
+        {
+            return myStr;
+        }
+        getDiguiPath(root, myPath, myStr);
+        return myStr;
+    }
+    vector<string> binaryTreePaths2(TreeNode* root)
+    {
+        vector<string> myStrVec;
+        vector<string> myPath;
+        stack<TreeNode*> mySta;
+        if (root == nullptr)
+        {
+            return myStrVec;
+        }
+        mySta.push(root);
+        myPath.push_back(to_string(root->val));
+        TreeNode* cur = nullptr;
+        while (!mySta.empty())
+        {
+            cur = mySta.top();
+            mySta.pop();
+            string path = myPath.back();
+            myPath.pop_back();
+            if (cur->left == nullptr && cur->right == nullptr)
+            {
+                myStrVec.push_back(path);
+            }
+            if (cur->right)
+            {
+                mySta.push(cur->right);
+                myPath.push_back(path + "->" + to_string(cur->right->val));
+            }
+            if (cur->left)
+            {
+                mySta.push(cur->left);
+                myPath.push_back(path + "->" + to_string(cur->left->val));
+            }
+        }
+        return myStrVec;
+    }
     void printMyStringVec(const vector<string>& myV)
     {
         for (auto val : myV)
@@ -110,6 +175,6 @@ int main()
     root->right = f2;
     f1->left = f4;
     f4->right = f6;
-    sol.printMyStringVec(sol.binaryTreePaths(root));
+    sol.printMyStringVec(sol.binaryTreePaths2(root));
     return 0;
 }
