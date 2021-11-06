@@ -63,6 +63,34 @@ public:
         }
         return sum;
     }
+    int sumOfLeftLeaves1(TreeNode* root)
+    {
+        if (root == nullptr)
+        {
+            return 0;
+        }
+        int sum = 0;
+        stack<TreeNode*> myStack;
+        myStack.push(root);
+        while (!myStack.empty())
+        {
+            TreeNode* cur = myStack.top();
+            myStack.pop();
+            if (cur->left && !cur->left->left && !cur->left->right)
+            {
+                sum += cur->left->val;
+            }
+            if (cur->right)
+            {
+                myStack.push(cur->right);
+            }
+            if (cur->left)
+            {
+                myStack.push(cur->left);
+            }
+        }
+        return sum;
+    }
 
 };
 int main()
@@ -77,6 +105,6 @@ int main()
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    cout << sol.sumOfLeftLeaves(root) << endl;
+    cout << sol.sumOfLeftLeaves1(root) << endl;
     return 0;
 }
