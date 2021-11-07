@@ -73,6 +73,38 @@ public:
         }
         return ret;
     }
+    int maxdeep = -1;
+    TreeNode* maxLeft = nullptr;
+    void finddigui(TreeNode* root, int deep)
+    {
+        if (root->left == nullptr && root->right == nullptr)
+        {
+            if (deep > maxdeep)
+            {
+                maxdeep = deep;
+                maxLeft = root;
+            }
+            return;
+        }
+        if (root->left)
+        {
+            finddigui(root->left, deep + 1);
+        }
+        if (root->right)
+        {
+            finddigui(root->right, deep + 1);
+        }
+
+    }
+    int findBottomLeftValue1(TreeNode* root)
+    {
+        if (root == nullptr)
+        {
+            return 0;
+        }
+        finddigui(root, 0);
+        return maxLeft->val;
+    }
 
 };
 int main()
@@ -87,6 +119,6 @@ int main()
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    cout << sol.findBottomLeftValue(root) << endl;
+    cout << sol.findBottomLeftValue1(root) << endl;
     return 0;
 }
