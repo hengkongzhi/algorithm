@@ -84,6 +84,69 @@ public:
         }
         return ret;
     }
+    TreeNode* pre = nullptr;
+    vector<int> myV;
+    int count;
+    int maxCount = INT32_MIN;
+    void midOrder1(TreeNode* root)
+    {
+        if (root == nullptr)
+        {
+            return;
+        }
+        if (root->left)
+        {
+            midOrder1(root->left);
+        }
+        if (pre == nullptr)
+        {
+            count = 1;
+            pre = root;
+        }
+        else if (pre->val == root->val)
+        {
+            count += 1;
+        }
+        else
+        {   
+            if (count > maxCount)
+            {
+                maxCount = count;
+                myV.clear();
+                myV.push_back(pre->val);
+            }
+            else if (count == maxCount)
+            {
+                myV.push_back(pre->val);
+            }
+            count = 1;
+            pre = root;
+        }
+        
+        if (root->right)
+        {
+            midOrder1(root->right);
+        }
+    }
+    vector<int> findMode1(TreeNode* root)
+    {
+        if (root == nullptr)
+        {
+            return {};
+        }
+        midOrder1(root);
+        if (count > maxCount)
+        {
+            maxCount = count;
+            myV.clear();
+            myV.push_back(pre->val);
+        }
+        else if (count == maxCount)
+        {
+            myV.push_back(pre->val);
+        }
+        return myV;
+    }
     void printVec(const vector<int>& myV)
     {
         for (auto& val : myV)
@@ -109,13 +172,13 @@ int main()
     Solution sol;
     TreeNode* root = new TreeNode(3);
     TreeNode* f1 = new TreeNode(2);
-    TreeNode* f2 = new TreeNode(1);
+    TreeNode* f2 = new TreeNode(3);
     TreeNode* f4 = new TreeNode(1);
     TreeNode* f6 = new TreeNode(5);
     root->left = f1;
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    sol.printVec(sol.findMode(root));
+    sol.printVec(sol.findMode1(root));
     return 0;
 }
