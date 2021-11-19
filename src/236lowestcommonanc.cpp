@@ -93,6 +93,28 @@ public:
         return ancestor;
 
     }
+    TreeNode* lowestCommonAncestor1(TreeNode* root, TreeNode* p, TreeNode* q)
+    {
+        if (root == p || root == q || root == nullptr)
+        {
+            return root;
+        }
+        TreeNode* left = lowestCommonAncestor1(root->left, p, q);
+        TreeNode* right = lowestCommonAncestor1(root->right, p, q);
+        if (left == nullptr && right)
+        {
+            return right;
+        }
+        if (left && right == nullptr)
+        {
+            return left;
+        }
+        if (left == nullptr && right == nullptr)
+        {
+            return nullptr;
+        }
+        return root;
+    }
     void printVec(const vector<int>& myV)
     {
         for (auto& val : myV)
@@ -125,6 +147,6 @@ int main()
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    cout << sol.lowestCommonAncestor(root, f1, f4)->val << endl;
+    cout << sol.lowestCommonAncestor1(root, f1, f4)->val << endl;
     return 0;
 }
