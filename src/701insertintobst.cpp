@@ -29,6 +29,23 @@ struct TreeNode
 class Solution 
 {
 public:
+    TreeNode* insertIntoBST1(TreeNode* root, int val)
+    {
+        if (root == nullptr)
+        {
+            root = new TreeNode(val);
+            return root;
+        }
+        if (root->val > val)
+        {
+            root->left = insertIntoBST1(root->left, val);
+        }
+        if (root->val < val)
+        {
+            root->right = insertIntoBST1(root->right, val);
+        }
+        return root;
+    }
     TreeNode* insertIntoBST(TreeNode* root, int val)
     {
         TreeNode* pVal = new TreeNode(val);
@@ -96,7 +113,7 @@ int main()
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    sol.midOrder(sol.insertIntoBST(root, 0));
+    sol.midOrder(sol.insertIntoBST1(root, 0));
     cout << endl;
     return 0;
 }
