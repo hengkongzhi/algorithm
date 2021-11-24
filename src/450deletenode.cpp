@@ -43,6 +43,37 @@ public:
         RIGHT,
         UNKNOWN
     };
+    TreeNode* deleteNode1(TreeNode* root, int key)
+    {
+        if (root == nullptr)
+        {
+            return root;
+        }
+        if (root->val == key)
+        {
+            if (root->left == nullptr)
+            {
+                return root->right;
+            }
+            if (root->right == nullptr)
+            {
+                return root->left;
+            }
+            if (root->left && root->right)
+            {
+                TreeNode* cur = root->right;
+                while (cur->left)
+                {
+                    cur = cur->left;
+                }
+                cur->left = root->left;
+                return root->right;
+            }
+        }
+        root->left = deleteNode1(root->left, key);
+        root->right = deleteNode1(root->right, key);
+        return root;
+    }
     TreeNode* deleteNode(TreeNode* root, int key)
     {
         if (root == nullptr)
@@ -146,7 +177,7 @@ int main()
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    sol.midOrder(sol.deleteNode(root, 2));
+    sol.midOrder(sol.deleteNode1(root, 2));
     cout << endl;
     return 0;
 }
