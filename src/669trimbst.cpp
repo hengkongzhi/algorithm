@@ -48,6 +48,43 @@ public:
             
         return root;
     }
+    TreeNode* trimBST1(TreeNode* root, int low, int high)
+    {
+        if (root == nullptr)
+        {
+            return root;
+        }
+        while (root != nullptr && (root->val > high || root->val < low))
+        {
+            if (root->val > high)
+            {
+                root = root->left;
+            }
+            else if (root->val < low)
+            {
+                root = root->right;
+            }
+        }
+        TreeNode* cur = root;
+        while (cur != nullptr)
+        {
+            while (cur->left && cur->left->val < low)
+            {
+                cur->left = cur->left->right;
+            }
+            cur = cur->left;
+        }
+        cur = root;
+        while (cur != nullptr)
+        {
+            while (cur->right && cur->right->val > high)
+            {
+                cur->right = cur->right->left;
+            }
+            cur = cur->right;            
+        }
+        return root;
+    }
     void midOrder(TreeNode* root)
     {
         if (root == nullptr)
@@ -78,7 +115,7 @@ int main()
     root->right = f2;
     f1->left = f4;
     f2->right = f6;
-    sol.midOrder(sol.trimBST(root, 2, 4));
+    sol.midOrder(sol.trimBST1(root, 2, 4));
     cout << endl;
     return 0;
 }
