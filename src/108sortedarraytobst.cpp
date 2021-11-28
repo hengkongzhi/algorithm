@@ -46,6 +46,72 @@ public:
         root->right = sortedArrayToBST(tmp1);
         return root;
     }
+    TreeNode* sortedArrayToBST1(vector<int>& nums)
+    {
+        if (nums.size() == 0)
+        {
+            return nullptr;
+        }
+        queue<TreeNode*> myQ;
+        queue<int> myLeft;
+        queue<int> myRight;
+        TreeNode* root = new TreeNode(0);
+        myQ.push(root);
+        int left = 0;
+        int right = nums.size() - 1;
+        myLeft.push(left);
+        myRight.push(right);
+        while (!myQ.empty())
+        {
+            TreeNode* cur = myQ.front();
+            myQ.pop();
+            left = myLeft.front(); myLeft.pop();
+            right = myRight.front(); myRight.pop();
+            int mid = (left + right) / 2;
+            cur->val = nums[mid];
+            if (mid - 1 >= left)
+            {
+                int left1 = left;
+                int right1 = mid - 1;
+                cur->left = new TreeNode(0);
+                myQ.push(cur->left);
+                myLeft.push(left1);
+                myRight.push(right1);
+            }
+            if (mid + 1 <= right)
+            {
+                int left1 = mid + 1;
+                int right1 = right;
+                cur->right = new TreeNode(0);
+                myQ.push(cur->right);
+                myLeft.push(left1);
+                myRight.push(right1);
+            }
+        }
+        return root;
+
+    }
+    TreeNode* toBst(vector<int>& nums, int low, int high)
+    {
+        if (low > high)
+        {
+            return nullptr;
+        }
+        int mid = (low + high) / 2;
+        TreeNode* cur = new TreeNode(nums[mid]);
+        cur->left = toBst(nums, low, mid - 1);
+        cur->right = toBst(nums, mid + 1, high);
+        return cur;
+        
+    }
+    TreeNode* sortedArrayToBST2(vector<int>& nums)
+    {
+        if (nums.size() == 0)
+        {
+            return nullptr;
+        }
+        return toBst(nums, 0, nums.size() - 1);
+    }
     void midOrder(TreeNode* root)
     {
         if (root == nullptr)
@@ -77,7 +143,7 @@ int main()
     f1->left = f4;
     f2->right = f6;
     vector<int> nums{-10,-3,0,5,9};
-    sol.midOrder(sol.sortedArrayToBST(nums));
+    sol.midOrder(sol.sortedArrayToBST2(nums));
     cout << endl;
     return 0;
 }
