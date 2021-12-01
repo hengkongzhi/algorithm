@@ -52,6 +52,26 @@ public:
         combineTest(nums, k);
         return ret;
     }
+
+    void back(int n, int k, int start)
+    {
+        if (myV.size() == k)
+        {
+            ret.push_back(myV);
+            return;
+        }
+        for (int i = start; i <= n - k + 1 + myV.size(); i++)
+        {
+            myV.push_back(i);
+            back(n, k, i + 1);
+            myV.pop_back();
+        }
+    }
+    vector<vector<int>> combine1(int n, int k)
+    {
+        back(n, k, 1);
+        return ret;
+    }
     void vecPrint()
     {
         for (auto vec : ret)
@@ -68,7 +88,7 @@ public:
 int main()
 {
     Solution sol;
-    sol.combine(4, 3);
+    sol.combine1(4, 3);
     sol.vecPrint();
     return 0;
 }
