@@ -48,7 +48,6 @@ public:
         {
             vector<int> tmp = path;
             sort(tmp.begin(), tmp.end());
-
             forRet(tmp);
             return;
         }
@@ -56,7 +55,7 @@ public:
         {
             return;
         }
-        for (int i = 0; i < vec.size(); i++)
+        for (int i = 0; i < vec.size() && sum - vec[i] >= 0; i++)
         {
             path.push_back(vec[i]);
             back(vec, sum - vec[i]);
@@ -69,6 +68,7 @@ public:
         {
             return ret;
         }
+        sort(candidates.begin(), candidates.end());
         back(candidates, target);
         return ret;
     }
