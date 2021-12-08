@@ -65,6 +65,44 @@ public:
         back(s);
         return ret;
     }
+    bool isCallBack(string& s, int start, int end)
+    {
+        for (int i = start, j = end; i < j; i++, j--)
+        {
+            if (s[i] != s[j])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    void echoBack(int start, string& s)
+    {
+        if (start >= s.size())
+        {
+            ret.push_back(splite);
+            return;
+        }
+        for (int i = start; i < s.size(); i++)
+        {
+            if (isCallBack(s, start, i))
+            {
+                string tmp = s.substr(start, i - start + 1);
+                splite.push_back(tmp);
+            }
+            else
+            {
+                continue;
+            }
+            echoBack(i + 1, s);
+            splite.pop_back();
+        }
+    }
+    vector<vector<string>> partition1(string s)
+    {
+        echoBack(0, s);
+        return ret;
+    }
     void vecPrint()
     {
         for (auto vec : ret)
@@ -82,7 +120,7 @@ int main()
 {
     Solution sol;
     string s = "efe";
-    sol.partition(s);
+    sol.partition1(s);
     sol.vecPrint();
     return 0;
 }
