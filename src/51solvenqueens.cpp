@@ -88,6 +88,58 @@ public:
         retString(tmp, n);
         return tmp;
     }
+
+    vector<vector<string>> realRet;
+    bool validate(int row, int col, int n, vector<string>& oneSol)
+    {
+        for (int i = 0; i < row; i++)
+        {
+            if (oneSol[i][col] == 'Q')
+            {
+                return false;
+            }
+        }
+
+        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)
+        {
+            if (oneSol[i][j] == 'Q')
+            {
+                return false;
+            }
+        }
+        for (int i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++)
+        {
+            if (oneSol[i][j] == 'Q')
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    void goOn(int row, int n, vector<string>& oneSol)
+    {
+        if (row == n)
+        {
+            realRet.push_back(oneSol);
+            return;
+        }
+        for (int i = 0; i < n; i++)
+        {
+            if (validate(row, i, n, oneSol))
+            {
+                oneSol[row][i] = 'Q';
+                goOn(row + 1, n, oneSol);
+                oneSol[row][i] = '.';
+            }
+            
+        }
+    }
+    vector<vector<string>> solveNQueens1(int n)
+    {
+        vector<string> tmp(n, string(n, '.'));
+        goOn(0, n, tmp);
+        return realRet;
+    }
     void vecPrint(const vector<vector<string>>& tmp)
     {
         for (auto vec : tmp)
@@ -106,6 +158,6 @@ public:
 int main()
 {
     Solution sol;
-    sol.vecPrint(sol.solveNQueens(5));
+    sol.vecPrint(sol.solveNQueens1(5));
     return 0;
 }
