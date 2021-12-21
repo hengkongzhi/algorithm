@@ -101,12 +101,19 @@ public:
             }
         }
 
-        auto iter = mapVec.find(pair<int, int>(row, col));
-        for (auto v : iter->second)
+        int startRow = (row / 3) * 3;
+        int startCol = (col / 3) * 3;
+        for (int i = startRow; i < startRow + 3; i++)
         {
-            if (val + '0' == board[v.first][v.second])
+            for (int j = startCol; j < startCol + 3; j++)
             {
-                return false;
+                if (i != row && j != col)
+                {
+                    if (val + '0' == board[i][j])
+                    {
+                        return false;
+                    }
+                }
             }
         }
         return true;
@@ -153,7 +160,6 @@ public:
     void solveSudoku(vector<vector<char>>& board)
     {
         constructPos(board);
-        constructMap();
         auto iter = pos.begin();
         back(iter, board);
     }
