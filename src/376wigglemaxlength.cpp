@@ -50,22 +50,18 @@ public:
             }
         }
         int count = 0;
-        int sum = 0;
         for (int i = j; i < newVec.size(); i++)
         {
-            sum += newVec[i];
-            if ((positive && sum > 0) || (positive && newVec[i] > 0))
+            if (positive && newVec[i] > 0)
             {
                 count++;
                 positive = false;
-                sum = 0;
                 continue;
             }
-            if ((positive == false && sum < 0) || (positive == false && newVec[i] < 0))
+            if (positive == false && newVec[i] < 0)
             {
                 count++;
                 positive = true;
-                sum = 0;
                 continue;
             }
         }
