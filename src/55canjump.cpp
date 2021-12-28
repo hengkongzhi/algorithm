@@ -161,11 +161,45 @@ public:
         }
         return false;
     }
+    bool canJump2(vector<int>& nums)
+    {
+        int lDistance = nums.size() - 1;
+        int max = 0;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            if (i <= max)
+            {
+                if (i + nums[i] > max)
+                {
+                    max = i + nums[i];
+                }
+            }
+            if (max >= lDistance)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    bool canJump3(vector<int>& nums)
+    {
+        int lDistance = nums.size() - 1;
+        int cover = 0;
+        for (int i = 0; i <= cover; i++)
+        {
+            cover = max(i + nums[i], cover);
+            if (cover >= lDistance)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 };
 int main()
 {
     Solution sol;
     vector<int> nums{8,2,4,4,4,9,5,2,5,8,8,0,8,6,9,1,1,6,3,5,1,2,6,6,0,4,8,6,0,3,2,8,7,6,5,1,7,0,3,4,8,3,5,9,0,4,0,1,0,5,9,2,0,7,0,2,1,0,8,2,5,1,2,3,9,7,4,7,0,0,1,8,5,6,7,5,1,9,9,3,5,0,7,5};
-    cout << sol.canJump1(nums) << endl;
+    cout << sol.canJump2(nums) << endl;
     return 0;
 }
