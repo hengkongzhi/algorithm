@@ -81,12 +81,33 @@ public:
         sort(myVec.begin(), myVec.end(), Cmp());
         return deal(myVec, gas, cost);
     }
+    int canCompleteCircuit1(vector<int>& gas, vector<int>& cost)
+    {
+        int totalSum = 0;
+        int curSum = 0;
+        int start = 0;
+        for (int i = 0; i < gas.size(); i++)
+        {
+            curSum += gas[i] - cost[i];
+            totalSum += gas[i] - cost[i];
+            if (curSum < 0)
+            {
+                start = i + 1;
+                curSum = 0;
+            }
+        }
+        if (totalSum < 0)
+        {
+            return -1;
+        }
+        return start;
+    }
 };
 int main()
 {
     Solution sol;
-    vector<int> gas{2,3,4};
-    vector<int> cost{3,4,3};
-    cout << sol.canCompleteCircuit(gas, cost) << endl;
+    vector<int> gas{1,2,3,4,5};
+    vector<int> cost{3,4,5,1,2};
+    cout << sol.canCompleteCircuit1(gas, cost) << endl;
     return 0;
 }
