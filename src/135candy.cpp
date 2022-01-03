@@ -127,11 +127,34 @@ public:
         }
         return sum(ret);
     }
+    int candy1(vector<int>& ratings)
+    {
+        vector<int> ret;
+        for (int i = 0; i < ratings.size(); i++)
+        {
+            ret.push_back(1);
+        }
+        for (int i = 1; i < ratings.size(); i++)
+        {
+            if (ratings[i] > ratings[i - 1])
+            {
+                ret[i] = ret[i - 1] + 1;
+            }
+        }
+        for (int i = ratings.size() - 2; i >= 0; i--)
+        {
+            if (ratings[i] > ratings[i + 1])
+            {
+                ret[i] = max(ret[i], ret[i + 1] + 1);
+            }
+        }
+        return sum(ret);
+    }
 };
 int main()
 {
     Solution sol;
     vector<int> cost{1,2,2};
-    cout << sol.candy(cost) << endl;
+    cout << sol.candy1(cost) << endl;
     return 0;
 }
