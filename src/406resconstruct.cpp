@@ -58,28 +58,51 @@ public:
         }
         return count - myV[1];
     }
+    bool judge(vector<int>& vec1, vector<int>& vec2)
+    {
+        if (vec1[0] >= vec2[0])
+        {
+            return true;
+        }
+        return false;
+    }
+    void deleFunc(vector<bool>& del, vector<vector<int>>& myVec2)
+    {
+        auto iter = myVec2.begin();
+        for (int i = del.size() - 1; i >= 0; i--)
+        {
+            if (del[i])
+            {
+                myVec2.erase(iter + i);
+            }
+        }
+    }
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people)
     {
         sort(people.begin(), people.end(), Cmp());
         deque<vector<int>> myQ1;
-        deque<vector<int>> myQ2;
+        vector<vector<int>> myVec2;
         for (int i = 0; i < people.size(); i++)
         {
             int count = check(myQ1, people[i]);
             if (count < 0)
             {
-                while (count++ && !myQ2.empty())
+                int j = 0;
+                vector<bool> myDel(myVec2.size(), false);
+                while (j < myVec2.size() && count < 0)
                 {
-                    if (!myQ2.empty())
+                    if (judge(myVec2[j], people[i]))
                     {
-                        myQ1.push_back(myQ2.front());
-                        myQ2.pop_front();
+                        myQ1.push_back(myVec2[j]);
+                        myDel[j] = true;
+                        count++;
                     }
-                    
+                    j++;
                 }
+                deleFunc(myDel, myVec2);
                 if (count < 0)
                 {
-                    myQ2.push_back(people[i]);
+                    myVec2.push_back(people[i]);
                 }
                 else
                 {
@@ -88,18 +111,25 @@ public:
             }
             else if (count > 0)
             {
+                deque<vector<int>> tmp;
                 while (count--)
                 {
-                    myQ2.push_front(myQ1.back());
+                    tmp.push_front(myQ1.back());
                     myQ1.pop_back();
+                }
+                while (!tmp.empty())
+                {
+                    myVec2.push_back(tmp.front());
+                    tmp.pop_front();
                 }
                 myQ1.push_back(people[i]);
             }
         }
-        while (!myQ2.empty())
+        while (!myVec2.empty())
         {
-            myQ1.push_back(myQ2.front());
-            myQ2.pop_front();
+            myQ1.push_back(*myVec2.begin());
+            auto iter = myVec2.begin();
+            myVec2.erase(iter);
         }
         return vector<vector<int>>(myQ1.begin(), myQ1.end());
     }
@@ -118,7 +148,7 @@ public:
 int main()
 {
     Solution sol;
-    vector<vector<int>> cost{{9,0},{7,0},{1,9},{3,0},{2,7},{5,3},{6,0},{3,4},{6,2},{5,2}};
+    vector<vector<int>> cost{{8,2},{4,1},{0,3},{3,2},{8,1},{4,0},{7,0},{6,2},{8,0},{4,7}};
     sol.printVec(sol.reconstructQueue(cost));
     return 0;
 }
