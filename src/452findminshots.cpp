@@ -67,6 +67,27 @@ public:
         return myStack.size();
 
     }
+    int findMinArrowShots1(vector<vector<int>>& points)
+    {
+        if (points.size() == 0)
+        {
+            return 0;
+        }
+        sort(points.begin(), points.end(), Cmp());
+        int count = 1;
+        for (int i = 1; i < points.size(); i++)
+        {
+            if (points[i][0] > points[i - 1][1])
+            {
+                count++;
+            }
+            else
+            {
+                points[i][1] = min(points[i - 1][1], points[i][1]);
+            }
+        }
+        return count;
+    }
     void printVec(const vector<vector<int>>& real)
     {
         for (auto val : real)
@@ -83,6 +104,6 @@ int main()
 {
     Solution sol;
     vector<vector<int>> cost{{10,16},{2,8},{1,6},{7,12}};
-    cout << sol.findMinArrowShots(cost) << endl;
+    cout << sol.findMinArrowShots1(cost) << endl;
     return 0;
 }
