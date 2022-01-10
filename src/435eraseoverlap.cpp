@@ -21,50 +21,33 @@ public:
     {
         bool operator() (vector<int>& it, vector<int>& ia)
         {
-            if (it[0] < ia[0])
+            if (it[1] < ia[1])
             {
                 return true;
             }
-            else if (it[0] > ia[0])
+            else if (it[1] > ia[1])
             {
                 return false;
             }
             else
             {
-                return it[1] < ia[1];
+                return it[0] < ia[0];
             }
         }
     };
-    bool judge(vector<vector<int>>& inter, vector<int>& val)
-    {
-        vector<int> nVal(val.begin(), val.end());
-        for (int i = 0; i < inter.size(); i++)
-        {
-            if (inter[i][0] >= nVal[0] && inter[i][1] <= nVal[1])
-            {
-                return true;
-            }
-            if (nVal[0] >= inter[i][0] && nVal[1] <= inter[i][1])
-            {
-                return true;
-            }
-            if (nVal[0] <= inter[i][1])
-            {
-                nVal[0] = inter[i][0];
-            }
-        }
-        inter.push_back(val);
-        return false;
-    }
     int eraseOverlapIntervals(vector<vector<int>>& intervals)
     {
         sort(intervals.begin(), intervals.end(), Cmp());
-        vector<vector<int>> ret;
-        for (int i = 0; i < intervals.size(); i++)
+        int count = 0;
+        for (int i = 1; i < intervals.size(); i++)
         {
-            judge(ret, intervals[i]);
+            if (intervals[i][0] < intervals[i - 1][1])
+            {
+                intervals[i][1] = intervals[i - 1][1];
+                count++;
+            }
         }
-        return intervals.size() - ret.size();
+        return count;
     }
     void printVec(const vector<vector<int>>& real)
     {
