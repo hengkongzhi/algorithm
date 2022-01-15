@@ -74,6 +74,54 @@ public:
         }
         return sum;
     }
+    int maxProfit1(vector<int>& prices, int fee)
+    {
+        if (prices.empty())
+        {
+            return 0;
+        }
+        int minv = prices[0];
+        int res = 0;
+        for (int i = 1; i < prices.size(); i++)
+        {
+            if (prices[i] < minv)
+            {
+                minv = prices[i];
+            }
+            if (prices[i] > minv + fee)
+            {
+                res += prices[i] - minv - fee;
+                minv = prices[i] - fee;
+            }
+        }
+        return res;
+    }
+    int maxProfit2(vector<int>& prices, int fee)
+    {
+        int n = prices.size();
+        vector<vector<int>> dp(n, vector<int>(2, 0));
+        //dp[i][0] 第i天持有股票的所剩最大金额
+        //dp[i][1] 第i天的最大金额
+        dp[0][0] -= prices[0];
+        for (int i = 1; i < prices.size(); i++)
+        {
+            dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] - prices[i]);
+            dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] + prices[i] - fee);
+        }
+        return dp[n - 1][1];
+    }
+    int maxProfit3(vector<int>& prices, int fee)
+    {
+        int holdS = (-1) * prices[0];
+        int sale = 0;
+        for (int i = 0; i < prices.size(); i++)
+        {
+            int preHoldS = holdS;
+            holdS = max(preHoldS, sale - prices[i]);
+            sale = max(sale, preHoldS + prices[i] - fee);
+        }
+        return sale;
+    }
     int getSum(vector<int>& rets)
     {
         int sum = 0;
@@ -88,6 +136,6 @@ int main()
 {
     Solution sol;
     vector<int> price = {4,5,2,4,3,3,1,2,5,4};
-    cout << sol.maxProfit(price, 1) << endl;
+    cout << sol.maxProfit3(price, 1) << endl;
     return 0;
 }
