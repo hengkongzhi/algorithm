@@ -76,6 +76,41 @@ public:
         }
         return ret;
     }
+    int res = 0;
+    int trace(TreeNode* root)
+    {
+        // 0未覆盖
+        // 1摄像头
+        // 2覆盖
+        if (root == nullptr)
+        {
+            return 2;
+        }
+        int left = trace(root->left);
+        int right = trace(root->right);
+        if (left == 2 && right == 2)
+        {
+            return 0;
+        }
+        if (left == 0 || right == 0)
+        {
+            res++;
+            return 1;
+        }
+        if (left == 1 || right == 1)
+        {
+            return 2;
+        }
+    }
+    int minCameraCover1(TreeNode* root)
+    {
+        int stat = trace(root);
+        if (stat == 0)
+        {
+            res++;
+        }
+        return res;
+    }
 };
 int main()
 {
@@ -89,6 +124,6 @@ int main()
     f1->left = f2;
     f2->left = f3;
     f3->right = f4;
-    cout << sol.minCameraCover(root) << endl;
+    cout << sol.minCameraCover1(root) << endl;
     return 0;
 }
