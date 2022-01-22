@@ -19,11 +19,12 @@ class Solution
 public:
     int numTrees(int n)
     {
-        vector<int> dp(n + 1);
+        vector<int> dp(n + 1, 0);
         if (n <= 2)
         {
             return n;
         }
+        dp[0] = 1;
         dp[1] = 1;
         dp[2] = 2;
         dp[3] = 5;
@@ -35,7 +36,7 @@ public:
             {
                 for (int j = i - 1; j >= i - half; j--)
                 {
-                    dp[i] += dp[j];
+                    dp[i] += dp[j] * dp[i - j - 1];
                 }
                 dp[i] *= 2;
             }
@@ -43,10 +44,10 @@ public:
             {
                 for (int j = i - 1; j >= i - half; j--)
                 {
-                    dp[i] += dp[j];
+                    dp[i] += dp[j] * dp[i - j - 1];
                 }
                 dp[i] *= 2;
-                dp[i] += dp[(i - 1) / 2] * 2;           
+                dp[i] += dp[(i - 1) / 2] * dp[(i - 1) / 2];           
             }
         }
         return dp[n];
@@ -55,6 +56,6 @@ public:
 int main()
 {
     Solution sol;
-    cout << sol.numTrees(1) << endl;
+    cout << sol.numTrees(6) << endl;
     return 0;
 }
