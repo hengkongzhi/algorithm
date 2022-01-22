@@ -55,10 +55,23 @@ public:
         }
         return maxNum;
     }
+    int integerBreak1(int n)
+    {
+        vector<int> dp(n + 1, 0);
+        dp[2] = 1;
+        for (int i = 3; i <= n; i++)
+        {
+            for (int j = 1; j < i - 1; j++)
+            {
+                dp[i] = max(dp[i], max(dp[i - j] * j, (i - j) * j));
+            }
+        }
+        return dp[n];
+    }
 };
 int main()
 {
     Solution sol;
-    cout << sol.integerBreak(8) << endl;
+    cout << sol.integerBreak1(8) << endl;
     return 0;
 }
