@@ -48,6 +48,19 @@ public:
         return dp;
         
     }
+    int packege011(vector<int>& weight, vector<int>& value, int sumWeight)
+    {
+        vector<int> dp(sumWeight + 1, 0);
+        dp[0] = 0;
+        for (int j = 0; j < weight.size(); j++)
+        {
+            for (int i = sumWeight; i >= weight[j]; i--)
+            {
+                dp[i] = max(dp[i], dp[i - weight[j]] + value[j]);
+            }
+        }
+        return dp[sumWeight];
+    }
     void vecPrint(const vector<vector<int>>& dp)
     {
         for (auto vec : dp)
@@ -66,5 +79,6 @@ int main()
     vector<int> weight{1, 3, 4};
     vector<int> value{15, 20, 30};
     sol.vecPrint(sol.packege01(weight, value, 4));
+    cout << sol.packege011(weight, value, 4) << endl;
     return 0;
 }
