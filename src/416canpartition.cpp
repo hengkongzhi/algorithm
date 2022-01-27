@@ -80,9 +80,19 @@ public:
             return false;
         }
         int half = sum / 2;
-        prob = nums.size() * nums.size();
-        vector<bool> numB(nums.size(), false);
-        return back(nums, numB, half);
+        vector<int> dp(half + 1, 0);
+        for (int i = 0; i < nums.size(); i++)
+        {
+            for (int j = half; j >= nums[i]; j--)
+            {
+                dp[j] = max(dp[j], dp[j - nums[i]] + nums[i]);
+            }
+        }
+        if (dp[half] == half)
+        {
+            return true;
+        }
+        return false;
     }
 };
 int main()
