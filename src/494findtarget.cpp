@@ -58,11 +58,34 @@ public:
         trace(nums, 0, target);
         return retCount;
     }
+    int findTargetSumWays1(vector<int>& nums, int target)
+    {
+        int sum = 0;
+        for (auto val : nums)
+        {
+            sum += val;
+        }
+        if (sum - target < 0 || (sum - target) % 2 == 1)
+        {
+            return 0;
+        }
+        int right = (sum - target) / 2;
+        vector<int> dp(right + 1, 0);
+        dp[0] = 1;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            for (int j = right; j >= nums[i]; j--)
+            {
+                dp[j] += dp[j - nums[i]];
+            }
+        }
+        return dp[right];
+    }
 };
 int main()
 {
     Solution sol;
-    vector<int> weight{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1};
-    cout << sol.findTargetSumWays(weight, 1) << endl;
+    vector<int> weight{0,0,0,0,1};
+    cout << sol.findTargetSumWays1(weight, 1) << endl;
     return 0;
 }
