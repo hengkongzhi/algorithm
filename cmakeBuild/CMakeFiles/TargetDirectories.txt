@@ -1,0 +1,10 @@
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/1005largestsum.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/135candy.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/19eraserevern.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/203erasenode.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/206reverlist.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/209shortarray.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/27erase.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/59luoxuan.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/707devlist.dir
+/root/algorithm/leetcode/cmakeBuild/CMakeFiles/860lemonchange.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/209shortarray.dir/209shortarray.cpp.o  -o /root/algorithm/leetcode/bin/209shortarray -rdynamic 

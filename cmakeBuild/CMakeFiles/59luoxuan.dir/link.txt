@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/59luoxuan.dir/59luoxuan.cpp.o  -o /root/algorithm/leetcode/bin/59luoxuan -rdynamic 

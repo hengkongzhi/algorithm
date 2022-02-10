@@ -1,4 +1,4 @@
-src=$(shell find ../src/ -type f | xargs -i basename {} | tr "\n" " ")
+src=$(shell find ../src/ -type f -name "*.cpp" | xargs -i basename {} | tr "\n" " ")
 rebin=$(addprefix ../bin/,$(basename $(src)))
 define func
 $(1):$(2)

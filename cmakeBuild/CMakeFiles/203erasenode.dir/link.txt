@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/203erasenode.dir/203erasenode.cpp.o  -o /root/algorithm/leetcode/bin/203erasenode -rdynamic 

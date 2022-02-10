@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/1005largestsum.dir/1005largestsum.cpp.o  -o /root/algorithm/leetcode/bin/1005largestsum -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/27erase.dir/27erase.cpp.o  -o /root/algorithm/leetcode/bin/27erase -rdynamic 

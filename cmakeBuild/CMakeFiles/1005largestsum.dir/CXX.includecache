@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/algorithm/leetcode/src/1005largestsum.cpp
+iostream
+-
+vector
+-
+string
+-
+stack
+-
+queue
+-
+deque
+-
+algorithm
+-
+unordered_set
+-
+unordered_map
+-
+map
+-
+stdlib.h
+-
+math.h
+-
+sstream
+-
+

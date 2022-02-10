@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/19eraserevern.dir/19eraserevern.cpp.o  -o /root/algorithm/leetcode/bin/19eraserevern -rdynamic 
