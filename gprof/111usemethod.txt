@@ -1,0 +1,4 @@
+g++ -std=c++11 -pg ../src/1arrtwonumand.cpp -o ./1arrtwonumand
+gprof 1arrtwonumand gmon.out > parse5.txt
+python gprof2dot.py -n0.1 -e0.1 parse5.txt -o 1.dot
+dot -Tpdf 1.dot -o 1.pdf

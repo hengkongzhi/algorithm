@@ -1,0 +1,2 @@
+g++ -std=c++11 -ftest-coverage -fprofile-arcs ../src/1arrtwonumand.cpp -o ./1arrtwonumand
+gcov -r 1arrtwonumand.cpp

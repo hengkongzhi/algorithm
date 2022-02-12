@@ -1,0 +1,1081 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.07      0.40     0.40        1   400.27   400.27  Solution::twoSum1(std::vector<int, std::allocator<int> >&, int)
+  0.00      0.40     0.00        6     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00      0.40     0.00        6     0.00     0.00  __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_ptr()
+  0.00      0.40     0.00        6     0.00     0.00  __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_addr()
+  0.00      0.40     0.00        6     0.00     0.00  std::initializer_list<int>::begin() const
+  0.00      0.40     0.00        6     0.00     0.00  std::allocator<int>::~allocator()
+  0.00      0.40     0.00        6     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      0.40     0.00        6     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator()
+  0.00      0.40     0.00        6     0.00     0.00  std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr()
+  0.00      0.40     0.00        6     0.00     0.00  std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>&)
+  0.00      0.40     0.00        6     0.00     0.00  int const* std::__miter_base<int const*>(int const*)
+  0.00      0.40     0.00        6     0.00     0.00  int const* std::__niter_base<int const*>(int const*)
+  0.00      0.40     0.00        6     0.00     0.00  std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&)
+  0.00      0.40     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.00      0.40     0.00        5     0.00     0.00  std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        5     0.00     0.00  std::__detail::_Node_iterator_base<std::pair<int const, int>, false>::_Node_iterator_base(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        4     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const
+  0.00      0.40     0.00        4     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(int const&, unsigned long, unsigned long) const
+  0.00      0.40     0.00        4     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h2() const
+  0.00      0.40     0.00        4     0.00     0.00  std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const
+  0.00      0.40     0.00        4     0.00     0.00  std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true> const&)
+  0.00      0.40     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+  0.00      0.40     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+  0.00      0.40     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&)
+  0.00      0.40     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00      0.40     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<int>::max_size() const
+  0.00      0.40     0.00        3     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_node(unsigned long, int const&, unsigned long) const
+  0.00      0.40     0.00        3     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const
+  0.00      0.40     0.00        3     0.00     0.00  std::initializer_list<int>::end() const
+  0.00      0.40     0.00        3     0.00     0.00  std::initializer_list<int>::size() const
+  0.00      0.40     0.00        3     0.00     0.00  std::hash<int>::operator()(int) const
+  0.00      0.40     0.00        3     0.00     0.00  decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const
+  0.00      0.40     0.00        3     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const
+  0.00      0.40     0.00        3     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h1() const
+  0.00      0.40     0.00        3     0.00     0.00  std::allocator<int>::allocator(std::allocator<int> const&)
+  0.00      0.40     0.00        3     0.00     0.00  std::allocator<int>::allocator()
+  0.00      0.40     0.00        3     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::end()
+  0.00      0.40     0.00        3     0.00     0.00  int const& std::__pair_get<0ul>::__get<int const, int>(std::pair<int const, int>&)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.00      0.40     0.00        3     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+  0.00      0.40     0.00        3     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.40     0.00        3     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.40     0.00        3     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base(std::allocator<int> const&)
+  0.00      0.40     0.00        3     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      0.40     0.00        3     0.00     0.00  std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long)
+  0.00      0.40     0.00        3     0.00     0.00  std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::__uninitialized_copy<true>::__uninit_copy<int const*, int*>(int const*, int const*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag)
+  0.00      0.40     0.00        3     0.00     0.00  std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&)
+  0.00      0.40     0.00        3     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00      0.40     0.00        3     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.00      0.40     0.00        3     0.00     0.00  std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v()
+  0.00      0.40     0.00        3     0.00     0.00  std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true> const&)
+  0.00      0.40     0.00        3     0.00     0.00  std::iterator_traits<int const*>::difference_type std::__distance<int const*>(int const*, int const*, std::random_access_iterator_tag)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::__niter_base<int*>(int*)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::uninitialized_copy<int const*, int*>(int const*, int const*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  std::iterator_traits<int const*>::iterator_category std::__iterator_category<int const*>(int const* const&)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::__uninitialized_copy_a<int const*, int*, int>(int const*, int const*, int*, std::allocator<int>&)
+  0.00      0.40     0.00        3     0.00     0.00  std::tuple_element<0ul, std::pair<int const, int> >::type& std::get<0ul, int const, int>(std::pair<int const, int>&)
+  0.00      0.40     0.00        3     0.00     0.00  int* std::copy<int const*, int*>(int const*, int const*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  std::pair<int const, int>& std::forward<std::pair<int const, int>&>(std::remove_reference<std::pair<int const, int>&>::type&)
+  0.00      0.40     0.00        3     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      0.40     0.00        3     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.00      0.40     0.00        3     0.00     0.00  std::iterator_traits<int const*>::difference_type std::distance<int const*>(int const*, int const*)
+  0.00      0.40     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::new_allocator()
+  0.00      0.40     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::~new_allocator()
+  0.00      0.40     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int const, int> >::new_allocator()
+  0.00      0.40     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int const, int> >::~new_allocator()
+  0.00      0.40     0.00        2     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_uses_single_bucket(std::__detail::_Hash_node_base**) const
+  0.00      0.40     0.00        2     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_begin() const
+  0.00      0.40     0.00        2     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long) const
+  0.00      0.40     0.00        2     0.00     0.00  std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&)
+  0.00      0.40     0.00        2     0.00     0.00  std::allocator<std::__detail::_Hash_node_base*>::~allocator()
+  0.00      0.40     0.00        2     0.00     0.00  std::allocator<std::pair<int const, int> >::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&)
+  0.00      0.40     0.00        2     0.00     0.00  std::allocator<std::pair<int const, int> >::~allocator()
+  0.00      0.40     0.00        2     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long)
+  0.00      0.40     0.00        2     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets()
+  0.00      0.40     0.00        2     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&)
+  0.00      0.40     0.00        2     0.00     0.00  std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::end()
+  0.00      0.40     0.00        2     0.00     0.00  std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::find(int const&)
+  0.00      0.40     0.00        2     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract()
+  0.00      0.40     0.00        2     0.00     0.00  std::__detail::_Hash_node_base::_Hash_node_base()
+  0.00      0.40     0.00        2     0.00     0.00  std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>&)
+  0.00      0.40     0.00        2     0.00     0.00  bool std::__detail::operator!=<std::pair<int const, int>, false>(std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&, std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&)
+  0.00      0.40     0.00        2     0.00     0.00  std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&)
+  0.00      0.40     0.00        2     0.00     0.00  std::__detail::_Hash_node_base** std::__addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&)
+  0.00      0.40     0.00        2     0.00     0.00  std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&& std::forward<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >(std::remove_reference<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::type&)
+  0.00      0.40     0.00        2     0.00     0.00  int& std::forward<int&>(std::remove_reference<int&>::type&)
+  0.00      0.40     0.00        2     0.00     0.00  bool&& std::forward<bool>(std::remove_reference<bool>::type&)
+  0.00      0.40     0.00        2     0.00     0.00  int&& std::forward<int>(std::remove_reference<int>::type&)
+  0.00      0.40     0.00        2     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.40     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.40     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.40     0.00        1     0.00     0.00  Solution::printVec(std::vector<int, std::allocator<int> > const&)
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::deallocate(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocate(unsigned long, void const*)
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::new_allocator()
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~new_allocator()
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::deallocate(std::__detail::_Hash_node_base**, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*)
+  0.00      0.40     0.00        1     0.00     0.00  void __gnu_cxx::new_allocator<std::pair<int const, int> >::destroy<std::pair<int const, int> >(std::pair<int const, int>*)
+  0.00      0.40     0.00        1     0.00     0.00  void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::max_size() const
+  0.00      0.40     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::max_size() const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_node<std::pair<int const, int>, false>::_M_next() const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::operator->() const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_store_code(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_eq() const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Prime_rehash_policy::_M_state() const
+  0.00      0.40     0.00        1     0.00     0.00  std::equal_to<int>::operator()(int const&, int const&) const
+  0.00      0.40     0.00        1     0.00     0.00  std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocator()
+  0.00      0.40     0.00        1     0.00     0.00  std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~allocator()
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>)
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_allocate_buckets(unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_bucket_begin(unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear()
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&)
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable()
+  0.00      0.40     0.00        1     0.00     0.00  std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable()
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::insert<std::pair<int, int>, void>(std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::unordered_map()
+  0.00      0.40     0.00        1     0.00     0.00  std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::~unordered_map()
+  0.00      0.40     0.00        1     0.00     0.00  std::pointer_traits<std::__detail::_Hash_node<std::pair<int const, int>, false>*>::pointer_to(std::__detail::_Hash_node<std::pair<int const, int>, false>&)
+  0.00      0.40     0.00        1     0.00     0.00  std::pointer_traits<std::__detail::_Hash_node_base**>::pointer_to(std::__detail::_Hash_node_base*&)
+  0.00      0.40     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::deallocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::deallocate(std::allocator<std::__detail::_Hash_node_base*>&, std::__detail::_Hash_node_base**, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  void std::allocator_traits<std::allocator<std::pair<int const, int> > >::destroy<std::pair<int const, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*)
+  0.00      0.40     0.00        1     0.00     0.00  void std::allocator_traits<std::allocator<std::pair<int const, int> > >::construct<std::pair<int const, int>, std::pair<int, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*, std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<int const, int>::pair<int, int, true>(std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool, true>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<int, int>::pair<int&, int&, true>(int&, int&)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_node<std::pair<int const, int>, false>::_Hash_node()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Insert_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_conjure_hashtable()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_Hashtable_alloc()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::~_Hashtable_alloc()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Prime_rehash_policy::_Prime_rehash_policy(float)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_Hash_node_value_base()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true> const&)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_Hashtable_ebo_helper()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::~_Hashtable_ebo_helper()
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true> const&)
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_node<std::pair<int const, int>, false>* std::addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&)
+  0.00      0.40     0.00        1     0.00     0.00  std::__detail::_Hash_node_base** std::addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&)
+  0.00      0.40     0.00        1     0.00     0.00  std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 2.50% of 0.40 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.40                 main [1]
+                0.40    0.00       1/1           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::~vector() [59]
+                0.00    0.00       2/3           std::allocator<int>::allocator() [43]
+                0.00    0.00       2/3           std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+                0.00    0.00       2/6           std::allocator<int>::~allocator() [13]
+                0.00    0.00       1/1           Solution::printVec(std::vector<int, std::allocator<int> > const&) [105]
+-----------------------------------------------
+                0.40    0.00       1/1           main [1]
+[2]    100.0    0.40    0.00       1         Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::operator[](unsigned long) [60]
+                0.00    0.00       2/5           std::vector<int, std::allocator<int> >::size() const [21]
+                0.00    0.00       2/2           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::find(int const&) [91]
+                0.00    0.00       2/2           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::end() [90]
+                0.00    0.00       2/2           bool std::__detail::operator!=<std::pair<int const, int>, false>(std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&, std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&) [95]
+                0.00    0.00       1/1           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::unordered_map() [136]
+                0.00    0.00       1/1           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::operator->() const [117]
+                0.00    0.00       1/3           std::allocator<int>::allocator() [43]
+                0.00    0.00       1/3           std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+                0.00    0.00       1/6           std::allocator<int>::~allocator() [13]
+                0.00    0.00       1/1           std::pair<int, int>::pair<int&, int&, true>(int&, int&) [148]
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [135]
+                0.00    0.00       1/1           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::~unordered_map() [137]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator<int>::~allocator() [13]
+[9]      0.0    0.00    0.00       6         __gnu_cxx::new_allocator<int>::~new_allocator() [9]
+-----------------------------------------------
+                0.00    0.00       6/6           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr() [16]
+[10]     0.0    0.00    0.00       6         __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_ptr() [10]
+                0.00    0.00       6/6           __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_addr() [11]
+-----------------------------------------------
+                0.00    0.00       6/6           __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_ptr() [10]
+[11]     0.0    0.00    0.00       6         __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_addr() [11]
+-----------------------------------------------
+                0.00    0.00       3/6           std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+                0.00    0.00       3/6           std::initializer_list<int>::end() const [36]
+[12]     0.0    0.00    0.00       6         std::initializer_list<int>::begin() const [12]
+-----------------------------------------------
+                0.00    0.00       1/6           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+                0.00    0.00       2/6           main [1]
+                0.00    0.00       3/6           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [50]
+[13]     0.0    0.00    0.00       6         std::allocator<int>::~allocator() [13]
+                0.00    0.00       6/6           __gnu_cxx::new_allocator<int>::~new_allocator() [9]
+-----------------------------------------------
+                0.00    0.00       3/6           std::vector<int, std::allocator<int> >::~vector() [59]
+                0.00    0.00       3/6           void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [57]
+[14]     0.0    0.00    0.00       6         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [14]
+-----------------------------------------------
+                0.00    0.00       1/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+                0.00    0.00       1/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+                0.00    0.00       2/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+                0.00    0.00       2/6           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+[15]     0.0    0.00    0.00       6         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator() [15]
+                0.00    0.00       6/6           std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>&) [17]
+-----------------------------------------------
+                0.00    0.00       1/6           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::operator->() const [117]
+                0.00    0.00       1/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+                0.00    0.00       1/6           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+                0.00    0.00       3/6           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v() [61]
+[16]     0.0    0.00    0.00       6         std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr() [16]
+                0.00    0.00       6/6           __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_ptr() [10]
+-----------------------------------------------
+                0.00    0.00       6/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator() [15]
+[17]     0.0    0.00    0.00       6         std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>&) [17]
+-----------------------------------------------
+                0.00    0.00       6/6           int* std::copy<int const*, int*>(int const*, int const*, int*) [71]
+[18]     0.0    0.00    0.00       6         int const* std::__miter_base<int const*>(int const*) [18]
+-----------------------------------------------
+                0.00    0.00       6/6           int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*) [66]
+[19]     0.0    0.00    0.00       6         int const* std::__niter_base<int const*>(int const*) [19]
+-----------------------------------------------
+                0.00    0.00       1/6           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [135]
+                0.00    0.00       1/6           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [165]
+                0.00    0.00       1/6           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       1/6           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+                0.00    0.00       1/6           void std::allocator_traits<std::allocator<std::pair<int const, int> > >::construct<std::pair<int const, int>, std::pair<int, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*, std::pair<int, int>&&) [145]
+                0.00    0.00       1/6           void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&) [113]
+[20]     0.0    0.00    0.00       6         std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+-----------------------------------------------
+                0.00    0.00       2/5           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+                0.00    0.00       3/5           Solution::printVec(std::vector<int, std::allocator<int> > const&) [105]
+[21]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::size() const [21]
+-----------------------------------------------
+                0.00    0.00       1/5           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+                0.00    0.00       1/5           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+                0.00    0.00       3/5           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::end() [44]
+[22]     0.0    0.00    0.00       5         std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [22]
+                0.00    0.00       5/5           std::__detail::_Node_iterator_base<std::pair<int const, int>, false>::_Node_iterator_base(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [23]
+-----------------------------------------------
+                0.00    0.00       5/5           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [22]
+[23]     0.0    0.00    0.00       5         std::__detail::_Node_iterator_base<std::pair<int const, int>, false>::_Node_iterator_base(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [23]
+-----------------------------------------------
+                0.00    0.00       1/4           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       1/4           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+                0.00    0.00       2/4           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+[24]     0.0    0.00    0.00       4         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const [24]
+                0.00    0.00       4/4           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(int const&, unsigned long, unsigned long) const [25]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const [24]
+[25]     0.0    0.00    0.00       4         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(int const&, unsigned long, unsigned long) const [25]
+                0.00    0.00       4/4           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h2() const [26]
+                0.00    0.00       4/4           std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const [27]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(int const&, unsigned long, unsigned long) const [25]
+[26]     0.0    0.00    0.00       4         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h2() const [26]
+                0.00    0.00       4/4           std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true> const&) [28]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(int const&, unsigned long, unsigned long) const [25]
+[27]     0.0    0.00    0.00       4         std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const [27]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h2() const [26]
+[28]     0.0    0.00    0.00       4         std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true> const&) [28]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [54]
+[29]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [29]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [55]
+[30]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [30]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<int>::max_size() const [33]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<int>::allocator(std::allocator<int> const&) [42]
+[31]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [31]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<int>::allocator() [43]
+[32]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<int>::new_allocator() [32]
+-----------------------------------------------
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [30]
+[33]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<int>::max_size() const [33]
+-----------------------------------------------
+                0.00    0.00       1/3           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       2/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+[34]     0.0    0.00    0.00       3         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_node(unsigned long, int const&, unsigned long) const [34]
+                0.00    0.00       3/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const [35]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_node(unsigned long, int const&, unsigned long) const [34]
+[35]     0.0    0.00    0.00       3         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const [35]
+                0.00    0.00       1/1           std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const [121]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+[36]     0.0    0.00    0.00       3         std::initializer_list<int>::end() const [36]
+                0.00    0.00       3/6           std::initializer_list<int>::begin() const [12]
+                0.00    0.00       3/3           std::initializer_list<int>::size() const [37]
+-----------------------------------------------
+                0.00    0.00       3/3           std::initializer_list<int>::end() const [36]
+[37]     0.0    0.00    0.00       3         std::initializer_list<int>::size() const [37]
+-----------------------------------------------
+                0.00    0.00       3/3           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const [40]
+[38]     0.0    0.00    0.00       3         std::hash<int>::operator()(int) const [38]
+-----------------------------------------------
+                0.00    0.00       1/3           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       1/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+                0.00    0.00       1/3           std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [151]
+[39]     0.0    0.00    0.00       3         decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [39]
+                0.00    0.00       3/3           std::tuple_element<0ul, std::pair<int const, int> >::type& std::get<0ul, int const, int>(std::pair<int const, int>&) [70]
+                0.00    0.00       3/3           std::pair<int const, int>& std::forward<std::pair<int const, int>&>(std::remove_reference<std::pair<int const, int>&>::type&) [72]
+-----------------------------------------------
+                0.00    0.00       1/3           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       2/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+[40]     0.0    0.00    0.00       3         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const [40]
+                0.00    0.00       3/3           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h1() const [41]
+                0.00    0.00       3/3           std::hash<int>::operator()(int) const [38]
+-----------------------------------------------
+                0.00    0.00       3/3           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const [40]
+[41]     0.0    0.00    0.00       3         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h1() const [41]
+                0.00    0.00       3/3           std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true> const&) [62]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [49]
+[42]     0.0    0.00    0.00       3         std::allocator<int>::allocator(std::allocator<int> const&) [42]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [31]
+-----------------------------------------------
+                0.00    0.00       1/3           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+                0.00    0.00       2/3           main [1]
+[43]     0.0    0.00    0.00       3         std::allocator<int>::allocator() [43]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<int>::new_allocator() [32]
+-----------------------------------------------
+                0.00    0.00       1/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+                0.00    0.00       2/3           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::end() [90]
+[44]     0.0    0.00    0.00       3         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::end() [44]
+                0.00    0.00       3/5           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [22]
+-----------------------------------------------
+                0.00    0.00       3/3           std::tuple_element<0ul, std::pair<int const, int> >::type& std::get<0ul, int const, int>(std::pair<int const, int>&) [70]
+[45]     0.0    0.00    0.00       3         int const& std::__pair_get<0ul>::__get<int const, int>(std::pair<int const, int>&) [45]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*) [65]
+[46]     0.0    0.00    0.00       3         int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [46]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::_Destroy<int*>(int*, int*) [73]
+[47]     0.0    0.00    0.00       3         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [47]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [57]
+[48]     0.0    0.00    0.00       3         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [48]
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [55]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_Vector_base(std::allocator<int> const&) [52]
+[49]     0.0    0.00    0.00       3         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [49]
+                0.00    0.00       3/3           std::allocator<int>::allocator(std::allocator<int> const&) [42]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [53]
+[50]     0.0    0.00    0.00       3         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [50]
+                0.00    0.00       3/6           std::allocator<int>::~allocator() [13]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [53]
+[51]     0.0    0.00    0.00       3         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [51]
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [54]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+[52]     0.0    0.00    0.00       3         std::_Vector_base<int, std::allocator<int> >::_Vector_base(std::allocator<int> const&) [52]
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [49]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::~vector() [59]
+[53]     0.0    0.00    0.00       3         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [53]
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [50]
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [51]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [51]
+[54]     0.0    0.00    0.00       3         std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [54]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [29]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [48]
+[55]     0.0    0.00    0.00       3         std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [55]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [30]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::uninitialized_copy<int const*, int*>(int const*, int const*, int*) [67]
+[56]     0.0    0.00    0.00       3         int* std::__uninitialized_copy<true>::__uninit_copy<int const*, int*>(int const*, int const*, int*) [56]
+                0.00    0.00       3/3           int* std::copy<int const*, int*>(int const*, int const*, int*) [71]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+[57]     0.0    0.00    0.00       3         void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [57]
+                0.00    0.00       3/3           std::iterator_traits<int const*>::difference_type std::distance<int const*>(int const*, int const*) [75]
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [48]
+                0.00    0.00       3/6           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [14]
+                0.00    0.00       3/3           int* std::__uninitialized_copy_a<int const*, int*, int>(int const*, int const*, int*, std::allocator<int>&) [69]
+-----------------------------------------------
+                0.00    0.00       1/3           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+                0.00    0.00       2/3           main [1]
+[58]     0.0    0.00    0.00       3         std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [58]
+                0.00    0.00       3/3           std::initializer_list<int>::end() const [36]
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::_Vector_base(std::allocator<int> const&) [52]
+                0.00    0.00       3/6           std::initializer_list<int>::begin() const [12]
+                0.00    0.00       3/3           void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [57]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[59]     0.0    0.00    0.00       3         std::vector<int, std::allocator<int> >::~vector() [59]
+                0.00    0.00       3/6           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [14]
+                0.00    0.00       3/3           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [74]
+                0.00    0.00       3/3           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [53]
+-----------------------------------------------
+                0.00    0.00       3/3           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[60]     0.0    0.00    0.00       3         std::vector<int, std::allocator<int> >::operator[](unsigned long) [60]
+-----------------------------------------------
+                0.00    0.00       1/3           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       1/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+                0.00    0.00       1/3           std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [151]
+[61]     0.0    0.00    0.00       3         std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v() [61]
+                0.00    0.00       3/6           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr() [16]
+-----------------------------------------------
+                0.00    0.00       3/3           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h1() const [41]
+[62]     0.0    0.00    0.00       3         std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true> const&) [62]
+-----------------------------------------------
+                0.00    0.00       3/3           std::iterator_traits<int const*>::difference_type std::distance<int const*>(int const*, int const*) [75]
+[63]     0.0    0.00    0.00       3         std::iterator_traits<int const*>::difference_type std::__distance<int const*>(int const*, int const*, std::random_access_iterator_tag) [63]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*) [66]
+[64]     0.0    0.00    0.00       3         int* std::__niter_base<int*>(int*) [64]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*) [66]
+[65]     0.0    0.00    0.00       3         int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*) [65]
+                0.00    0.00       3/3           int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [46]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::copy<int const*, int*>(int const*, int const*, int*) [71]
+[66]     0.0    0.00    0.00       3         int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*) [66]
+                0.00    0.00       6/6           int const* std::__niter_base<int const*>(int const*) [19]
+                0.00    0.00       3/3           int* std::__niter_base<int*>(int*) [64]
+                0.00    0.00       3/3           int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*) [65]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::__uninitialized_copy_a<int const*, int*, int>(int const*, int const*, int*, std::allocator<int>&) [69]
+[67]     0.0    0.00    0.00       3         int* std::uninitialized_copy<int const*, int*>(int const*, int const*, int*) [67]
+                0.00    0.00       3/3           int* std::__uninitialized_copy<true>::__uninit_copy<int const*, int*>(int const*, int const*, int*) [56]
+-----------------------------------------------
+                0.00    0.00       3/3           std::iterator_traits<int const*>::difference_type std::distance<int const*>(int const*, int const*) [75]
+[68]     0.0    0.00    0.00       3         std::iterator_traits<int const*>::iterator_category std::__iterator_category<int const*>(int const* const&) [68]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [57]
+[69]     0.0    0.00    0.00       3         int* std::__uninitialized_copy_a<int const*, int*, int>(int const*, int const*, int*, std::allocator<int>&) [69]
+                0.00    0.00       3/3           int* std::uninitialized_copy<int const*, int*>(int const*, int const*, int*) [67]
+-----------------------------------------------
+                0.00    0.00       3/3           decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [39]
+[70]     0.0    0.00    0.00       3         std::tuple_element<0ul, std::pair<int const, int> >::type& std::get<0ul, int const, int>(std::pair<int const, int>&) [70]
+                0.00    0.00       3/3           int const& std::__pair_get<0ul>::__get<int const, int>(std::pair<int const, int>&) [45]
+-----------------------------------------------
+                0.00    0.00       3/3           int* std::__uninitialized_copy<true>::__uninit_copy<int const*, int*>(int const*, int const*, int*) [56]
+[71]     0.0    0.00    0.00       3         int* std::copy<int const*, int*>(int const*, int const*, int*) [71]
+                0.00    0.00       6/6           int const* std::__miter_base<int const*>(int const*) [18]
+                0.00    0.00       3/3           int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*) [66]
+-----------------------------------------------
+                0.00    0.00       3/3           decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [39]
+[72]     0.0    0.00    0.00       3         std::pair<int const, int>& std::forward<std::pair<int const, int>&>(std::remove_reference<std::pair<int const, int>&>::type&) [72]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [74]
+[73]     0.0    0.00    0.00       3         void std::_Destroy<int*>(int*, int*) [73]
+                0.00    0.00       3/3           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [47]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::~vector() [59]
+[74]     0.0    0.00    0.00       3         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [74]
+                0.00    0.00       3/3           void std::_Destroy<int*>(int*, int*) [73]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [57]
+[75]     0.0    0.00    0.00       3         std::iterator_traits<int const*>::difference_type std::distance<int const*>(int const*, int const*) [75]
+                0.00    0.00       3/3           std::iterator_traits<int const*>::iterator_category std::__iterator_category<int const*>(int const* const&) [68]
+                0.00    0.00       3/3           std::iterator_traits<int const*>::difference_type std::__distance<int const*>(int const*, int const*, std::random_access_iterator_tag) [63]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [83]
+[76]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::new_allocator() [76]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::__detail::_Hash_node_base*>::~allocator() [84]
+[77]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::~new_allocator() [77]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::pair<int const, int> >::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [85]
+[78]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::pair<int const, int> >::new_allocator() [78]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::pair<int const, int> >::~allocator() [86]
+[79]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::pair<int const, int> >::~new_allocator() [79]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [87]
+[80]     0.0    0.00    0.00       2         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_uses_single_bucket(std::__detail::_Hash_node_base**) const [80]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear() [131]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) [127]
+[81]     0.0    0.00    0.00       2         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_begin() const [81]
+-----------------------------------------------
+                0.00    0.00       2/2           Solution::printVec(std::vector<int, std::allocator<int> > const&) [105]
+[82]     0.0    0.00    0.00       2         std::vector<int, std::allocator<int> >::operator[](unsigned long) const [82]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+[83]     0.0    0.00    0.00       2         std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [83]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::new_allocator() [76]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+[84]     0.0    0.00    0.00       2         std::allocator<std::__detail::_Hash_node_base*>::~allocator() [84]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::~new_allocator() [77]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+[85]     0.0    0.00    0.00       2         std::allocator<std::pair<int const, int> >::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [85]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::pair<int const, int> >::new_allocator() [78]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+[86]     0.0    0.00    0.00       2         std::allocator<std::pair<int const, int> >::~allocator() [86]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::pair<int const, int> >::~new_allocator() [79]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets() [88]
+[87]     0.0    0.00    0.00       2         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [87]
+                0.00    0.00       2/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_uses_single_bucket(std::__detail::_Hash_node_base**) const [80]
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable() [134]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) [127]
+[88]     0.0    0.00    0.00       2         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets() [88]
+                0.00    0.00       2/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [87]
+-----------------------------------------------
+                0.00    0.00       2/2           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::find(int const&) [91]
+[89]     0.0    0.00    0.00       2         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+                0.00    0.00       2/3           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const [40]
+                0.00    0.00       2/4           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const [24]
+                0.00    0.00       2/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_node(unsigned long, int const&, unsigned long) const [34]
+                0.00    0.00       1/5           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [22]
+                0.00    0.00       1/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::end() [44]
+-----------------------------------------------
+                0.00    0.00       2/2           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[90]     0.0    0.00    0.00       2         std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::end() [90]
+                0.00    0.00       2/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::end() [44]
+-----------------------------------------------
+                0.00    0.00       2/2           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[91]     0.0    0.00    0.00       2         std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::find(int const&) [91]
+                0.00    0.00       2/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [89]
+-----------------------------------------------
+                0.00    0.00       1/2           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+[92]     0.0    0.00    0.00       2         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() [92]
+                0.00    0.00       2/2           std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>&) [94]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable() [133]
+                0.00    0.00       1/2           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_Hash_node_value_base() [160]
+[93]     0.0    0.00    0.00       2         std::__detail::_Hash_node_base::_Hash_node_base() [93]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() [92]
+[94]     0.0    0.00    0.00       2         std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>&) [94]
+-----------------------------------------------
+                0.00    0.00       2/2           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[95]     0.0    0.00    0.00       2         bool std::__detail::operator!=<std::pair<int const, int>, false>(std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&, std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&) [95]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [166]
+[96]     0.0    0.00    0.00       2         std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [96]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hash_node_base** std::addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&) [167]
+                0.00    0.00       1/2           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+[97]     0.0    0.00    0.00       2         std::__detail::_Hash_node_base** std::__addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&) [97]
+-----------------------------------------------
+                0.00    0.00       1/2           std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [168]
+                0.00    0.00       1/2           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool, true>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [147]
+[98]     0.0    0.00    0.00       2         std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&& std::forward<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >(std::remove_reference<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::type&) [98]
+-----------------------------------------------
+                0.00    0.00       2/2           std::pair<int, int>::pair<int&, int&, true>(int&, int&) [148]
+[99]     0.0    0.00    0.00       2         int& std::forward<int&>(std::remove_reference<int&>::type&) [99]
+-----------------------------------------------
+                0.00    0.00       1/2           std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [168]
+                0.00    0.00       1/2           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool, true>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [147]
+[100]    0.0    0.00    0.00       2         bool&& std::forward<bool>(std::remove_reference<bool>::type&) [100]
+-----------------------------------------------
+                0.00    0.00       2/2           std::pair<int const, int>::pair<int, int, true>(std::pair<int, int>&&) [146]
+[101]    0.0    0.00    0.00       2         int&& std::forward<int>(std::remove_reference<int>::type&) [101]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+                0.00    0.00       1/2           void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&) [113]
+[102]    0.0    0.00    0.00       2         operator new(unsigned long, void*) [102]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [188]
+[103]    0.0    0.00    0.00       1         _GLOBAL__sub_I_main [103]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [103]
+[104]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[105]    0.0    0.00    0.00       1         Solution::printVec(std::vector<int, std::allocator<int> > const&) [105]
+                0.00    0.00       3/5           std::vector<int, std::allocator<int> >::size() const [21]
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::operator[](unsigned long) const [82]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::deallocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [140]
+[106]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::deallocate(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, unsigned long) [141]
+[107]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocate(unsigned long, void const*) [107]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::max_size() const [114]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocator() [124]
+[108]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::new_allocator() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~allocator() [125]
+[109]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~new_allocator() [109]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::deallocate(std::allocator<std::__detail::_Hash_node_base*>&, std::__detail::_Hash_node_base**, unsigned long) [142]
+[110]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::deallocate(std::__detail::_Hash_node_base**, unsigned long) [110]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) [143]
+[111]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) [111]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::max_size() const [115]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::allocator_traits<std::allocator<std::pair<int const, int> > >::destroy<std::pair<int const, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*) [144]
+[112]    0.0    0.00    0.00       1         void __gnu_cxx::new_allocator<std::pair<int const, int> >::destroy<std::pair<int const, int> >(std::pair<int const, int>*) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::allocator_traits<std::allocator<std::pair<int const, int> > >::construct<std::pair<int const, int>, std::pair<int, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*, std::pair<int, int>&&) [145]
+[113]    0.0    0.00    0.00       1         void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&) [113]
+                0.00    0.00       1/6           std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+                0.00    0.00       1/2           operator new(unsigned long, void*) [102]
+                0.00    0.00       1/1           std::pair<int const, int>::pair<int, int, true>(std::pair<int, int>&&) [146]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocate(unsigned long, void const*) [107]
+[114]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::max_size() const [114]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) [111]
+[115]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::max_size() const [115]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [155]
+[116]    0.0    0.00    0.00       1         std::__detail::_Hash_node<std::pair<int const, int>, false>::_M_next() const [116]
+-----------------------------------------------
+                0.00    0.00       1/1           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[117]    0.0    0.00    0.00       1         std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::operator->() const [117]
+                0.00    0.00       1/6           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr() [16]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const [121]
+[118]    0.0    0.00    0.00       1         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() const [118]
+                0.00    0.00       1/1           std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true> const&) [161]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+[119]    0.0    0.00    0.00       1         std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_store_code(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) const [119]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const [121]
+[120]    0.0    0.00    0.00       1         std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_eq() const [120]
+                0.00    0.00       1/1           std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true> const&) [164]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const [35]
+[121]    0.0    0.00    0.00       1         std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const [121]
+                0.00    0.00       1/1           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() const [118]
+                0.00    0.00       1/1           std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_eq() const [120]
+                0.00    0.00       1/1           std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+[122]    0.0    0.00    0.00       1         std::__detail::_Prime_rehash_policy::_M_state() const [122]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [151]
+[123]    0.0    0.00    0.00       1         std::equal_to<int>::operator()(int const&, int const&) const [123]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_Hashtable_ebo_helper() [162]
+[124]    0.0    0.00    0.00       1         std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocator() [124]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::new_allocator() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::~_Hashtable_ebo_helper() [163]
+[125]    0.0    0.00    0.00       1         std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~allocator() [125]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~new_allocator() [109]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [165]
+[126]    0.0    0.00    0.00       1         std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+                0.00    0.00       1/6           std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+                0.00    0.00       1/2           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() [92]
+                0.00    0.00       1/3           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v() [61]
+                0.00    0.00       1/3           decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [39]
+                0.00    0.00       1/3           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const [40]
+                0.00    0.00       1/4           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const [24]
+                0.00    0.00       1/3           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_node(unsigned long, int const&, unsigned long) const [34]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+                0.00    0.00       1/1           std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [168]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) [132]
+[127]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) [127]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_allocate_buckets(unsigned long) [128]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_begin() const [81]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets() [88]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) [127]
+[128]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_allocate_buckets(unsigned long) [128]
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+[129]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+                0.00    0.00       1/1           std::__detail::_Prime_rehash_policy::_M_state() const [122]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) [132]
+                0.00    0.00       1/2           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() [92]
+                0.00    0.00       1/3           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v() [61]
+                0.00    0.00       1/3           decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [39]
+                0.00    0.00       1/4           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const [24]
+                0.00    0.00       1/1           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_store_code(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) const [119]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_bucket_begin(unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [130]
+                0.00    0.00       1/5           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+[130]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_bucket_begin(unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable() [134]
+[131]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear() [131]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_begin() const [81]
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [155]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [129]
+[132]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) [132]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::unordered_map() [136]
+[133]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable() [133]
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_Hashtable_alloc() [157]
+                0.00    0.00       1/2           std::__detail::_Hash_node_base::_Hash_node_base() [93]
+                0.00    0.00       1/1           std::__detail::_Prime_rehash_policy::_Prime_rehash_policy(float) [159]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::~unordered_map() [137]
+[134]    0.0    0.00    0.00       1         std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable() [134]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear() [131]
+                0.00    0.00       1/2           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets() [88]
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::~_Hashtable_alloc() [158]
+-----------------------------------------------
+                0.00    0.00       1/1           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[135]    0.0    0.00    0.00       1         std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [135]
+                0.00    0.00       1/6           std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [165]
+-----------------------------------------------
+                0.00    0.00       1/1           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[136]    0.0    0.00    0.00       1         std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::unordered_map() [136]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable() [133]
+-----------------------------------------------
+                0.00    0.00       1/1           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[137]    0.0    0.00    0.00       1         std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::~unordered_map() [137]
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable() [134]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+[138]    0.0    0.00    0.00       1         std::pointer_traits<std::__detail::_Hash_node<std::pair<int const, int>, false>*>::pointer_to(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [138]
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [166]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+[139]    0.0    0.00    0.00       1         std::pointer_traits<std::__detail::_Hash_node_base**>::pointer_to(std::__detail::_Hash_node_base*&) [139]
+                0.00    0.00       1/1           std::__detail::_Hash_node_base** std::addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&) [167]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+[140]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::deallocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [140]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::deallocate(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+[141]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, unsigned long) [141]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocate(unsigned long, void const*) [107]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+[142]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::deallocate(std::allocator<std::__detail::_Hash_node_base*>&, std::__detail::_Hash_node_base**, unsigned long) [142]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::deallocate(std::__detail::_Hash_node_base**, unsigned long) [110]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+[143]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) [143]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+[144]    0.0    0.00    0.00       1         void std::allocator_traits<std::allocator<std::pair<int const, int> > >::destroy<std::pair<int const, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*) [144]
+                0.00    0.00       1/1           void __gnu_cxx::new_allocator<std::pair<int const, int> >::destroy<std::pair<int const, int> >(std::pair<int const, int>*) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+[145]    0.0    0.00    0.00       1         void std::allocator_traits<std::allocator<std::pair<int const, int> > >::construct<std::pair<int const, int>, std::pair<int, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*, std::pair<int, int>&&) [145]
+                0.00    0.00       1/6           std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+                0.00    0.00       1/1           void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&) [113]
+-----------------------------------------------
+                0.00    0.00       1/1           void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&) [113]
+[146]    0.0    0.00    0.00       1         std::pair<int const, int>::pair<int, int, true>(std::pair<int, int>&&) [146]
+                0.00    0.00       2/2           int&& std::forward<int>(std::remove_reference<int>::type&) [101]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [168]
+[147]    0.0    0.00    0.00       1         std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool, true>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [147]
+                0.00    0.00       1/2           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&& std::forward<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >(std::remove_reference<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::type&) [98]
+                0.00    0.00       1/2           bool&& std::forward<bool>(std::remove_reference<bool>::type&) [100]
+-----------------------------------------------
+                0.00    0.00       1/1           Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [2]
+[148]    0.0    0.00    0.00       1         std::pair<int, int>::pair<int&, int&, true>(int&, int&) [148]
+                0.00    0.00       2/2           int& std::forward<int&>(std::remove_reference<int&>::type&) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+[149]    0.0    0.00    0.00       1         std::__detail::_Hash_node<std::pair<int const, int>, false>::_Hash_node() [149]
+                0.00    0.00       1/1           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_Hash_node_value_base() [160]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [165]
+[150]    0.0    0.00    0.00       1         std::__detail::_Insert_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_conjure_hashtable() [150]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const [121]
+[151]    0.0    0.00    0.00       1         std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [151]
+                0.00    0.00       1/3           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v() [61]
+                0.00    0.00       1/3           decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [39]
+                0.00    0.00       1/1           std::equal_to<int>::operator()(int const&, int const&) const [123]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+[152]    0.0    0.00    0.00       1         std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&) [152]
+                0.00    0.00       2/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator() [15]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, unsigned long) [141]
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [96]
+                0.00    0.00       1/2           std::allocator<std::pair<int const, int> >::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [85]
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>::_Hash_node() [149]
+                0.00    0.00       1/2           operator new(unsigned long, void*) [102]
+                0.00    0.00       1/6           std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+                0.00    0.00       1/6           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr() [16]
+                0.00    0.00       1/1           void std::allocator_traits<std::allocator<std::pair<int const, int> > >::construct<std::pair<int const, int>, std::pair<int, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*, std::pair<int, int>&&) [145]
+                0.00    0.00       1/2           std::allocator<std::pair<int const, int> >::~allocator() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [155]
+[153]    0.0    0.00    0.00       1         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+                0.00    0.00       2/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator() [15]
+                0.00    0.00       1/1           std::pointer_traits<std::__detail::_Hash_node<std::pair<int const, int>, false>*>::pointer_to(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [138]
+                0.00    0.00       1/2           std::allocator<std::pair<int const, int> >::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [85]
+                0.00    0.00       1/6           std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr() [16]
+                0.00    0.00       1/1           void std::allocator_traits<std::allocator<std::pair<int const, int> > >::destroy<std::pair<int const, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*) [144]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::deallocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [140]
+                0.00    0.00       1/2           std::allocator<std::pair<int const, int> >::~allocator() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_allocate_buckets(unsigned long) [128]
+[154]    0.0    0.00    0.00       1         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long) [154]
+                0.00    0.00       1/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator() [15]
+                0.00    0.00       1/2           std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [83]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) [143]
+                0.00    0.00       1/2           std::__detail::_Hash_node_base** std::__addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&) [97]
+                0.00    0.00       1/2           std::allocator<std::__detail::_Hash_node_base*>::~allocator() [84]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear() [131]
+[155]    0.0    0.00    0.00       1         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [155]
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>::_M_next() const [116]
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*) [153]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [87]
+[156]    0.0    0.00    0.00       1         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156]
+                0.00    0.00       1/1           std::pointer_traits<std::__detail::_Hash_node_base**>::pointer_to(std::__detail::_Hash_node_base*&) [139]
+                0.00    0.00       1/6           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator() [15]
+                0.00    0.00       1/2           std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [83]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::deallocate(std::allocator<std::__detail::_Hash_node_base*>&, std::__detail::_Hash_node_base**, unsigned long) [142]
+                0.00    0.00       1/2           std::allocator<std::__detail::_Hash_node_base*>::~allocator() [84]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable() [133]
+[157]    0.0    0.00    0.00       1         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_Hashtable_alloc() [157]
+                0.00    0.00       1/1           std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_Hashtable_ebo_helper() [162]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable() [134]
+[158]    0.0    0.00    0.00       1         std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::~_Hashtable_alloc() [158]
+                0.00    0.00       1/1           std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::~_Hashtable_ebo_helper() [163]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable() [133]
+[159]    0.0    0.00    0.00       1         std::__detail::_Prime_rehash_policy::_Prime_rehash_policy(float) [159]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hash_node<std::pair<int const, int>, false>::_Hash_node() [149]
+[160]    0.0    0.00    0.00       1         std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_Hash_node_value_base() [160]
+                0.00    0.00       1/2           std::__detail::_Hash_node_base::_Hash_node_base() [93]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() const [118]
+[161]    0.0    0.00    0.00       1         std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true> const&) [161]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_Hashtable_alloc() [157]
+[162]    0.0    0.00    0.00       1         std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_Hashtable_ebo_helper() [162]
+                0.00    0.00       1/1           std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocator() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::~_Hashtable_alloc() [158]
+[163]    0.0    0.00    0.00       1         std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::~_Hashtable_ebo_helper() [163]
+                0.00    0.00       1/1           std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~allocator() [125]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_eq() const [120]
+[164]    0.0    0.00    0.00       1         std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true> const&) [164]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [135]
+[165]    0.0    0.00    0.00       1         std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [165]
+                0.00    0.00       1/1           std::__detail::_Insert_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_conjure_hashtable() [150]
+                0.00    0.00       1/6           std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&) [20]
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pointer_traits<std::__detail::_Hash_node<std::pair<int const, int>, false>*>::pointer_to(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [138]
+[166]    0.0    0.00    0.00       1         std::__detail::_Hash_node<std::pair<int const, int>, false>* std::addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [166]
+                0.00    0.00       1/2           std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [96]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pointer_traits<std::__detail::_Hash_node_base**>::pointer_to(std::__detail::_Hash_node_base*&) [139]
+[167]    0.0    0.00    0.00       1         std::__detail::_Hash_node_base** std::addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&) [167]
+                0.00    0.00       1/2           std::__detail::_Hash_node_base** std::__addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&) [97]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [126]
+[168]    0.0    0.00    0.00       1         std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [168]
+                0.00    0.00       1/2           bool&& std::forward<bool>(std::remove_reference<bool>::type&) [100]
+                0.00    0.00       1/2           std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&& std::forward<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >(std::remove_reference<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::type&) [98]
+                0.00    0.00       1/1           std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool, true>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [147]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [103] _GLOBAL__sub_I_main    [84] std::allocator<std::__detail::_Hash_node_base*>::~allocator() [151] std::__detail::_Equal_helper<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, unsigned long, false>::_S_equals(std::equal_to<int> const&, std::__detail::_Select1st const&, int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+ [104] __static_initialization_and_destruction_0(int, int) [85] std::allocator<std::pair<int const, int> >::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [22] std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::_Node_iterator(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+   [2] Solution::twoSum1(std::vector<int, std::allocator<int> >&, int) [86] std::allocator<std::pair<int const, int> >::~allocator() [92] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract()
+ [105] Solution::printVec(std::vector<int, std::allocator<int> > const&) [42] std::allocator<int>::allocator(std::allocator<int> const&) [93] std::__detail::_Hash_node_base::_Hash_node_base()
+ [106] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::deallocate(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [43] std::allocator<int>::allocator() [152] std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_node<std::pair<int, int> >(std::pair<int, int>&&)
+ [107] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocate(unsigned long, void const*) [13] std::allocator<int>::~allocator() [15] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_node_allocator()
+ [108] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::new_allocator() [126] std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace<std::pair<int, int> >(std::integral_constant<bool, true>, std::pair<int, int>&&) [153] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+ [109] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~new_allocator() [127] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) [154] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_allocate_buckets(unsigned long)
+ [110] __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::deallocate(std::__detail::_Hash_node_base**, unsigned long) [128] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_allocate_buckets(unsigned long) [155] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+ [111] __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) [87] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) [156] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long)
+  [76] __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::new_allocator() [88] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_buckets() [157] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::_Hashtable_alloc()
+  [77] __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::~new_allocator() [129] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [158] std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::~_Hashtable_alloc()
+ [112] void __gnu_cxx::new_allocator<std::pair<int const, int> >::destroy<std::pair<int const, int> >(std::pair<int const, int>*) [130] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_bucket_begin(unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) [23] std::__detail::_Node_iterator_base<std::pair<int const, int>, false>::_Node_iterator_base(std::__detail::_Hash_node<std::pair<int const, int>, false>*)
+ [113] void __gnu_cxx::new_allocator<std::pair<int const, int> >::construct<std::pair<int const, int>, std::pair<int, int> >(std::pair<int const, int>*, std::pair<int, int>&&) [44] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::end() [159] std::__detail::_Prime_rehash_policy::_Prime_rehash_policy(float)
+  [78] __gnu_cxx::new_allocator<std::pair<int const, int> >::new_allocator() [89] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(int const&) [61] std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_v()
+  [79] __gnu_cxx::new_allocator<std::pair<int const, int> >::~new_allocator() [131] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear() [16] std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_M_valptr()
+  [29] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [132] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) [160] std::__detail::_Hash_node_value_base<std::pair<int const, int> >::_Hash_node_value_base()
+  [30] __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [133] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_Hashtable() [94] std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>&)
+  [31] __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [134] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::~_Hashtable() [161] std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::__detail::_Select1st, true> const&)
+  [32] __gnu_cxx::new_allocator<int>::new_allocator() [45] int const& std::__pair_get<0ul>::__get<int const, int>(std::pair<int const, int>&) [17] std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_S_get(std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>&)
+   [9] __gnu_cxx::new_allocator<int>::~new_allocator() [46] int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [162] std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::_Hashtable_ebo_helper()
+  [10] __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_ptr() [47] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [163] std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >, true>::~_Hashtable_ebo_helper()
+  [11] __gnu_cxx::__aligned_buffer<std::pair<int const, int> >::_M_addr() [48] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [164] std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true> const&)
+ [114] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::max_size() const [49] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [62] std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true> const&)
+ [115] __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::max_size() const [50] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [28] std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true>::_S_cget(std::__detail::_Hashtable_ebo_helper<2, std::__detail::_Mod_range_hashing, true> const&)
+  [33] __gnu_cxx::new_allocator<int>::max_size() const [51] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [165] std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::__detail::_Insert<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, false>::insert<std::pair<int, int>, void>(std::pair<int, int>&&)
+  [34] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_node(unsigned long, int const&, unsigned long) const [14] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [95] bool std::__detail::operator!=<std::pair<int const, int>, false>(std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&, std::__detail::_Node_iterator_base<std::pair<int const, int>, false> const&)
+  [24] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index(int const&, unsigned long) const [52] std::_Vector_base<int, std::allocator<int> >::_Vector_base(std::allocator<int> const&) [63] std::iterator_traits<int const*>::difference_type std::__distance<int const*>(int const*, int const*, std::random_access_iterator_tag)
+  [35] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const [53] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [96] std::__detail::_Hash_node<std::pair<int const, int>, false>* std::__addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&)
+  [80] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_uses_single_bucket(std::__detail::_Hash_node_base**) const [90] std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::end() [97] std::__detail::_Hash_node_base** std::__addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&)
+  [81] std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_begin() const [91] std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::find(int const&) [18] int const* std::__miter_base<int const*>(int const*)
+  [36] std::initializer_list<int>::end() const [135] std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool> std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::insert<std::pair<int, int>, void>(std::pair<int, int>&&) [19] int const* std::__niter_base<int const*>(int const*)
+  [37] std::initializer_list<int>::size() const [136] std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::unordered_map() [64] int* std::__niter_base<int*>(int*)
+  [12] std::initializer_list<int>::begin() const [137] std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, int> > >::~unordered_map() [65] int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*)
+  [38] std::hash<int>::operator()(int) const [138] std::pointer_traits<std::__detail::_Hash_node<std::pair<int const, int>, false>*>::pointer_to(std::__detail::_Hash_node<std::pair<int const, int>, false>&) [66] int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*)
+  [21] std::vector<int, std::allocator<int> >::size() const [139] std::pointer_traits<std::__detail::_Hash_node_base**>::pointer_to(std::__detail::_Hash_node_base*&) [67] int* std::uninitialized_copy<int const*, int*>(int const*, int const*, int*)
+  [82] std::vector<int, std::allocator<int> >::operator[](unsigned long) const [140] std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::deallocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) [68] std::iterator_traits<int const*>::iterator_category std::__iterator_category<int const*>(int const* const&)
+ [116] std::__detail::_Hash_node<std::pair<int const, int>, false>::_M_next() const [141] std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >&, unsigned long) [69] int* std::__uninitialized_copy_a<int const*, int*, int>(int const*, int const*, int*, std::allocator<int>&)
+  [39] decltype ((get<0>)((forward<std::pair<int const, int>&>)({parm#1}))) std::__detail::_Select1st::operator()<std::pair<int const, int>&>(std::pair<int const, int>&) const [142] std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::deallocate(std::allocator<std::__detail::_Hash_node_base*>&, std::__detail::_Hash_node_base**, unsigned long) [70] std::tuple_element<0ul, std::pair<int const, int> >::type& std::get<0ul, int const, int>(std::pair<int const, int>&)
+ [117] std::__detail::_Node_iterator<std::pair<int const, int>, false, false>::operator->() const [143] std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) [71] int* std::copy<int const*, int*>(int const*, int const*, int*)
+ [118] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_extract() const [144] void std::allocator_traits<std::allocator<std::pair<int const, int> > >::destroy<std::pair<int const, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*) [98] std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&& std::forward<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >(std::remove_reference<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::type&)
+  [40] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const [145] void std::allocator_traits<std::allocator<std::pair<int const, int> > >::construct<std::pair<int const, int>, std::pair<int, int> >(std::allocator<std::pair<int const, int> >&, std::pair<int const, int>*, std::pair<int, int>&&) [72] std::pair<int const, int>& std::forward<std::pair<int const, int>&>(std::remove_reference<std::pair<int const, int>&>::type&)
+ [119] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_store_code(std::__detail::_Hash_node<std::pair<int const, int>, false>*, unsigned long) const [54] std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [99] int& std::forward<int&>(std::remove_reference<int&>::type&)
+  [25] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(int const&, unsigned long, unsigned long) const [55] std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [20] std::pair<int, int>&& std::forward<std::pair<int, int> >(std::remove_reference<std::pair<int, int> >::type&)
+  [41] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h1() const [56] int* std::__uninitialized_copy<true>::__uninit_copy<int const*, int*>(int const*, int const*, int*) [100] bool&& std::forward<bool>(std::remove_reference<bool>::type&)
+  [26] std::__detail::_Hash_code_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_h2() const [146] std::pair<int const, int>::pair<int, int, true>(std::pair<int, int>&&) [101] int&& std::forward<int>(std::remove_reference<int>::type&)
+ [120] std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_eq() const [147] std::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>::pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool, true>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&) [73] void std::_Destroy<int*>(int*, int*)
+ [121] std::__detail::_Hashtable_base<int, std::pair<int const, int>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node<std::pair<int const, int>, false>*) const [148] std::pair<int, int>::pair<int&, int&, true>(int&, int&) [74] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [27] std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const [57] void std::vector<int, std::allocator<int> >::_M_range_initialize<int const*>(int const*, int const*, std::forward_iterator_tag) [75] std::iterator_traits<int const*>::difference_type std::distance<int const*>(int const*, int const*)
+ [122] std::__detail::_Prime_rehash_policy::_M_state() const [58] std::vector<int, std::allocator<int> >::vector(std::initializer_list<int>, std::allocator<int> const&) [166] std::__detail::_Hash_node<std::pair<int const, int>, false>* std::addressof<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::__detail::_Hash_node<std::pair<int const, int>, false>&)
+ [123] std::equal_to<int>::operator()(int const&, int const&) const [59] std::vector<int, std::allocator<int> >::~vector() [167] std::__detail::_Hash_node_base** std::addressof<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base*&)
+ [124] std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::allocator() [60] std::vector<int, std::allocator<int> >::operator[](unsigned long) [168] std::pair<std::__decay_and_strip<std::__detail::_Node_iterator<std::pair<int const, int>, false, false> >::__type, std::__decay_and_strip<bool>::__type> std::make_pair<std::__detail::_Node_iterator<std::pair<int const, int>, false, false>, bool>(std::__detail::_Node_iterator<std::pair<int const, int>, false, false>&&, bool&&)
+ [125] std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >::~allocator() [149] std::__detail::_Hash_node<std::pair<int const, int>, false>::_Hash_node() [102] operator new(unsigned long, void*)
+  [83] std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> >(std::allocator<std::__detail::_Hash_node<std::pair<int const, int>, false> > const&) [150] std::__detail::_Insert_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_conjure_hashtable()
